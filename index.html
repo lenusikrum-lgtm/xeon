@@ -911,7 +911,7 @@ footer {
   <span>Сортировка:</span>
   <select id="sort-select" onchange="changeSort(this.value)">
     <option value="default">По умолчанию</option>
-    <option value="price-asc">Цена: по возрастанию</option>
+    <option value="price-asc" selected>Цена: по возрастанию</option>
     <option value="price-desc">Цена: по убыванию</option>
   </select>
 </div>
@@ -1095,7 +1095,7 @@ footer {
 
 let cart = JSON.parse(localStorage.getItem('xeonCart') || '[]');
 let currentCategory = 'all';
-let sortMode = 'default';
+let sortMode = 'price-asc';
 
 function changeSort(mode) {
   sortMode = mode;
