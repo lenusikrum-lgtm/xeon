@@ -499,14 +499,9 @@ header {
 }
 .product-links a:hover { color: var(--purple); }
 .product-img-wrap {
-  width:100%;height:170px;border-radius:12px;overflow:hidden;
-  background:rgba(255,255,255,0.03);margin-bottom:12px;
+  width:100%;height:240px;border-radius:12px;overflow:hidden;
+  background:#fff;margin-bottom:12px;
   display:flex;align-items:center;justify-content:center;position:relative;
-}
-.product-img-wrap::after{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(180deg,transparent 60%,var(--dark));
-  pointer-events:none;
 }
 .product-img {
   width:100%;height:100%;object-fit:contain;padding:12px;
@@ -885,16 +880,6 @@ footer {
   <div class="header-cats" id="categories"></div>
 </header>
 
-<section class="hero">
-  <h1>Собери<br>свой идеальный ПК</h1>
-  <p>Комплектующие для мощных рабочих станций и серверов на базе Xeon. Только проверенные компоненты с гарантией.</p>
-  <div class="hero-cta">
-    <button class="btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})"><span>Смотреть товары →</span></button>
-    <a class="btn-secondary" onclick="toggleCart()">🛒 Корзина</a>
-    <a class="btn-secondary" onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})">❓ F.A.Q.</a>
-  </div>
-</section>
-
 <div class="sort-bar">
   <span>Сортировка:</span>
   <select id="sort-select" onchange="changeSort(this.value)">
@@ -1124,7 +1109,15 @@ function renderProducts() {
     return;
   }
   const filtered = (currentCategory === 'all' ? products : products.filter(p => p.category === currentCategory)).filter(p => !p.hidden);
-  if (sortMode === 'price-asc') filtered.sort((a, b) => sortPrice(a) - sortPrice(b));
+  if (currentCategory === 'all') {
+    const catOrder = categories.filter(c => !['all','builds','builder','faq'].includes(c.id)).map(c => c.id);
+    filtered.sort((a, b) => {
+      const ai = catOrder.indexOf(a.category);
+      const bi = catOrder.indexOf(b.category);
+      if (ai !== bi) return ai - bi;
+      return sortPrice(a) - sortPrice(b);
+    });
+  } else if (sortMode === 'price-asc') filtered.sort((a, b) => sortPrice(a) - sortPrice(b));
   else if (sortMode === 'price-desc') filtered.sort((a, b) => sortPrice(b) - sortPrice(a));
   if (filtered.length === 0) {
     grid.innerHTML = '<div style="text-align:center;padding:60px 0;color:var(--text-dim);font-size:18px">Нет товаров в этой категории</div>';
