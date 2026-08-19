@@ -1211,13 +1211,14 @@ function presetPrice(b) {
   add(pr.stor1); add(pr.stor2); add(pr.gpu); add(pr.psu); add(pr.case);
   if (pr.extras) pr.extras.forEach(e => add(e.id, e.qty));
   const mb = get(pr.mb);
-  total += (mb && mb.dual) ? 2500 : 2000;
+  total += (mb && mb.dual) ? 3000 : 2000;
   if (pr.win) total += 500;
   return total;
 }
 
 function renderBuildPresets() {
-  return buildPresets.map(b => {
+  const sorted = buildPresets.map(b => ({ b, price: presetPrice(b) })).sort((a, b) => a.price - b.price);
+  return sorted.map(({ b }) => {
     const total = presetPrice(b);
     return `
     <div class="product-card">
@@ -1379,7 +1380,7 @@ function buildConfigurator() {
         </div>
         <div class="builder-section">
           <h3>🔌 Блок питания</h3>
-          <select id="b-psu" onchange="calcBuilderTotal()">${builderOpts('psu','— нет —')}</select>
+          <select id="b-psu" onchange="updateExtrasVisibility();calcBuilderTotal()">${builderOpts('psu','— нет —')}</select>
         </div>
         <div class="builder-section">
           <h3>🖥 Корпус</h3>
@@ -1389,6 +1390,10 @@ function buildConfigurator() {
           <h3>🛠 Услуги</h3>
           <div class="builder-assembly-info" id="b-assembly-info">Сборка: —</div>
           <label class="builder-check"><input type="checkbox" id="b-win" onchange="calcBuilderTotal()"> Установка Windows 10/11 — 500 ₽</label>
+        </div>
+        <div class="builder-section" id="b-extras-wrap" style="display:none">
+          <h3>🔌 Дополнительно</h3>
+          <label class="builder-check"><input type="checkbox" id="b-ext-cpu" onchange="calcBuilderTotal()"> Удлинитель питания CPU 8-pin — 300 ₽</label>
         </div>
         <div class="builder-total">
           <div class="builder-total-label">Итого:</div>
@@ -1446,7 +1451,24 @@ function onMbChange() {
     const coolers = getByCat('coolers');
     rebuildFiltered('b-cool2', coolers, cool1, 2);
   }
+  updateExtrasVisibility();
   calcBuilderTotal();
+}
+
+function updateExtrasVisibility() {
+  const mbId = parseInt(document.getElementById('b-mb').value);
+  const mb = products.find(p => p.id === mbId);
+  const isDual = mb && mb.dual;
+  const psuId = parseInt(document.getElementById('b-psu').value);
+  const wrap = document.getElementById('b-extras-wrap');
+  const cb = document.getElementById('b-ext-cpu');
+  if (isDual) {
+    wrap.style.display = '';
+    cb.checked = (psuId !== 72);
+  } else {
+    wrap.style.display = 'none';
+    cb.checked = false;
+  }
 }
 
 function getSelPrice(id) {
@@ -1468,9 +1490,9 @@ function getAssemblyPrice(isDual) {
   const hasPsu = document.getElementById('b-psu').value !== '';
   const hasCase = document.getElementById('b-case').value !== '';
   if (isDual) {
-    if (hasPsu && hasCase) return { price: 2500, label: 'Все наше' };
-    if (hasPsu || hasCase) return { price: 3000, label: 'Ваш БП или корпус' };
-    return { price: 3500, label: 'Ваш БП и корпус' };
+    if (hasPsu && hasCase) return { price: 3000, label: 'Все наше' };
+    if (hasPsu || hasCase) return { price: 3500, label: 'Ваш БП или корпус' };
+    return { price: 4000, label: 'Ваш БП и корпус' };
   }
   if (hasPsu && hasCase) return { price: 2000, label: 'Все наше' };
   if (hasPsu || hasCase) return { price: 2500, label: 'Ваш БП или корпус' };
@@ -1543,6 +1565,8 @@ function calcBuilderTotal() {
   const win = document.getElementById('b-win').checked;
   if (win) { total += 500; parts.push('Windows'); }
 
+  if (document.getElementById('b-ext-cpu')?.checked) { total += 300; parts.push('Удлинитель CPU 8-pin'); }
+
   document.getElementById('b-total').textContent = total.toLocaleString() + ' ₽';
   document.getElementById('b-total').dataset.parts = JSON.stringify(parts);
   document.getElementById('b-total').dataset.total = total;
@@ -1586,6 +1610,7 @@ function addBuilderToCart() {
   lines.push('Сборка (' + assembly.label + ') — ' + assembly.price.toLocaleString() + ' ₽');
 
   if (document.getElementById('b-win').checked) lines.push('Windows — 500 ₽');
+  if (document.getElementById('b-ext-cpu')?.checked) lines.push('Удлинитель питания CPU 8-pin — 300 ₽');
 
   const name = 'Сборка ПК (конфигуратор)';
   cart.push({ id: 'build-' + Date.now(), qty: 1, name: name, price: total, desc: lines.join('\n') });

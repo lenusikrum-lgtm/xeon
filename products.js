@@ -98,9 +98,9 @@ const products = [
     img:'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=300&h=200&fit=crop',
     specs: ['Установка компонентов в корпус','Прокладка кабелей','Тестирование и стресс-тест','Сборка двухпроцессорной системы'],
     variants:[
-      {label:'Все наше',price:2500},
-      {label:'Ваш БП или корпус',price:3000},
-      {label:'Ваш БП и корпус',price:3500}
+      {label:'Все наше',price:3000},
+      {label:'Ваш БП или корпус',price:3500},
+      {label:'Ваш БП и корпус',price:4000}
     ]},
 ];
 
@@ -126,7 +126,7 @@ const buildPresets = [
   {
     id: 'b1', name: 'Сборка №1', img: 'img/case/mEVO7803.jpg',
     desc: ['Корпус EXEGATE mEVO-7803 (новый)','Материнская плата KEYIYOU X99 K4 (новая)','Процессор Xeon 2667 v3 8/16 3,2 ГГц (б/у)','Память 16 Гб 2133 МГц ×1 (б/у)','SSD 2,5" 256 Гб (новый)','Кулер MX96-V3 6 трубок, 92 мм, TDP 180 (новый)','БП DEEPCOOL PF650 650W (новый)','Услуга сборки + Windows 10'],
-    parts: { mb:1, cpu1:10, ram:20, ramQty:1, cool1:60, stor1:31, stor2:0, gpu:0, psu:40, case:43, win:true }
+    parts: { mb:1, cpu1:10, ram:20, ramQty:1, cool1:60, stor1:30, stor2:0, gpu:0, psu:40, case:43, win:true }
   },
   {
     id: 'b4', name: 'Сборка №3', img: 'img/case/Indigon.jpg',
@@ -155,13 +155,13 @@ const buildPresets = [
   },
   {
     id: 'b10', name: 'Сборка №10 (2 процессора)', img: 'img/case/Zulian.jpg',
-    desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная HUANANZHI X99 F8D+ (новая)','Процессор Xeon 2696 v4 ×2 (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 512 Гб + SSD 2,5" 1 Тб (новые)','Кулер Snowman MT6 V4 ARGB 6 трубок, 120 мм, TDP 210 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Удлинитель для питания CPU (новый)','Услуга сборки + Windows 10'],
-    parts: { mb:9, cpu1:18, cpu2:18, ram:58, ramQty:4, cool1:66, cool2:66, stor1:36, stor2:33, gpu:0, psu:72, case:46, win:true, extras:[{id:77,qty:1}] }
+    desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная HUANANZHI X99 F8D+ (новая)','Процессор Xeon 2696 v4 ×2 (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 512 Гб + SSD 2,5" 1 Тб (новые)','Кулер Eurocase 6PI120 ARGB 6 трубок, 120 мм, TDP 200 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Услуга сборки + Windows 10'],
+    parts: { mb:9, cpu1:18, cpu2:18, ram:58, ramQty:4, cool1:68, cool2:68, stor1:37, stor2:33, gpu:0, psu:72, case:46, win:true }
   },
   {
     id: 'b13', name: 'Сборка №13', img: 'img/case/F3_A_White.jpg',
     desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата JGINYUE TITANIUM D4+ (новая)','Процессор Xeon 2697A V4 16/32 2,6 ГГц (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 512 Гб (новый)','Кулер Snowman MT620 Black 6 трубок, 120 мм, TDP 250 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10'],
-    parts: { mb:6, cpu1:56, ram:58, ramQty:4, cool1:28, stor1:36, stor2:0, gpu:0, psu:42, case:73, win:true }
+    parts: { mb:6, cpu1:56, ram:58, ramQty:4, cool1:28, stor1:71, stor2:0, gpu:0, psu:42, case:73, win:true }
   },
   {
     id: 'b14', name: 'Сборка №14', img: 'img/case/Indigon.jpg',
