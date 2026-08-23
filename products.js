@@ -145,7 +145,7 @@ const buildPresets = [
     parts: { mb:5, cpu1:16, ram:20, ramQty:2, cool1:27, stor1:37, stor2:0, gpu:0, psu:41, case:45, win:true }
   },
   {
-    id: 'b7', name: 'Сборка №7', img: 'img/case/F3_A_White.jpg',
+    id: 'b7', name: 'Сборка №7', hidden: true, img: 'img/case/F3_A_White.jpg',
     desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата HUANANZHI X99 F8 ARGB (новая)','Процессор Xeon 2696 v4 22/44 2,2 ГГц (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 1 Тб (новый)','Кулер Eurocase 5PI120 ARGB 5 трубок, 120 мм, TDP 190 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10'],
     parts: { mb:8, cpu1:18, ram:58, ramQty:4, cool1:64, stor1:38, stor2:0, gpu:0, psu:42, case:73, win:true }
   },
