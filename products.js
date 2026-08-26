@@ -45,7 +45,7 @@ const products = [
   { id: 67, name: 'Кулер Snowman MT6 V4 ARGB White', category: 'coolers', price: 2300, stock: 2, img:'img/cool/MT6V4W.jpg', specs: ['6 трубок','120 мм','TDP 210W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
   { id: 68, name: 'Кулер Eurocase 6PI120 ARGB', category: 'coolers', price: 2300, stock: 2, img:'img/cool/5PI120.jpg', specs: ['6 трубок','120 мм','TDP 200W','Разъем: 4 pin','Крепится на материнку винтами'] },
   { id: 29, name: 'Видеокарта Palit NVIDIA RTX 5060 DUAL 8 ГБ', category: 'gpus', price: 31000, stock: 1, img:'img/gpu/palit5060.png', link:'https://www.palit.com/palit/vgapro.php?id=5575&lang=en&pn=NE75060019P1-GB2063D&tab=ov', specs: ['PCI-E 5.0','8 ГБ GDDR7','262 × 126 × 40 мм'] },
-  { id: 83, name: 'Видеокарта Winnfox GT730LP-4GD3-A', category: 'gpus', price: 3500, stock: 1, img:'img/gpu/gt7304g.jpg', specs: ['PCI-E 2.0','4 ГБ GDDR3','DVI, HDMI, VGA','1 слот, 148 мм'] },
+  { id: 83, name: 'Видеокарта Winnfox GT730LP-4GD3-A', category: 'gpus', price: 3500, stock: 1, img:'img/gpu/gt7304g.jpg', specs: ['4 ГБ GDDR3','DVI, HDMI, VGA','1 слот, 148 мм'] },
   { id: 30, name: 'SSD Goldenfir T650 2.5" 256 Гб', hidden: true, category: 'ssd', price: 2400, stock: 0, img:'img/ssd/T650-256GB.jpg', specs: ['Объём: 256 Гб','Интерфейс: SATA III'] },
   { id: 31, name: 'SSD Colorful SL500 2.5" 256 Гб', category: 'ssd', price: 3000, stock: 3, img:'img/ssd/SL500.jpg', link:'https://en.colorful.cn/ru/home/product?mid=122&id=0d394ae8-2e65-416e-99f9-d26422394ea8', specs: ['Объём: 256 Гб','Интерфейс: SATA III'] },
   { id: 32, name: 'SSD CUSU C300 2.5" 512 Гб', category: 'ssd', price: 4600, stock: 0, img:'img/ssd/C300.jpg', specs: ['Объём: 512 Гб','Интерфейс: SATA III'] },
