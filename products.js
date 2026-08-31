@@ -13,19 +13,19 @@ const products = [
   { id: 82, name: 'Материнская плата Machinist B9', category: 'motherboards', price: 4200, stock: 1, img:'https://optim.tildacdn.pub/tild6236-6339-4766-a637-656235386435/-/resize/650x/-/format/webp/Screenshot_241.jpg.webp', link:'https://www.juxieshi.com.cn/en/product/122.html', specs: ['Quad 4×DDR4, ≤128Гб','Чипсет C612','8 фаз питания','2×M.2 NVME PCIe 3.0','LGA 2011-3 (Xeon E5 V3/V4)','6×SATA 3.0, mATX 245×190 мм'], gallery:['https://optim.tildacdn.pub/tild6236-6339-4766-a637-656235386435/-/resize/650x/-/format/webp/Screenshot_241.jpg.webp','https://optim.tildacdn.pub/tild6133-6564-4339-a432-313734623532/-/resize/760x/-/format/webp/Screenshot_239.jpg.webp','https://optim.tildacdn.pub/tild3865-6433-4065-b839-663338376664/-/resize/651x/-/format/webp/Screenshot_240.jpg.webp','https://optim.tildacdn.pub/tild3065-3266-4364-b132-396161366365/-/resize/760x/-/format/webp/Screenshot_242.jpg.webp'], descFull:['Четырехканальная оперативная память 4×DDR4, max 128 Гб','Серверный чипсет C612','8 фаз питания','NVME M.2 PCIe X4 3.0 — 1 шт, NVME M.2 PCIe X4 3.0/NGFF M.2 — 1 шт','Слот для видеокарты металлизированный','Поддержка процессоров Intel Xeon E5 1600, 2600 V3/V4, сокет LGA 2011-3','SATA 3.0 — 6 шт','USB 2.0 — 4 шт., USB 3.0 — 4 шт., Gigabit Ethernet','Форм-фактор m-ATX. Размер: 245×190 мм'] },
   { id: 10, name: 'Процессор Xeon 2667 v3 8/16 3,2 ГГц 135W', category: 'cpus', price: 1000, stock: 3, img:'img/cpu/2667v3.jpg', specs: ['Состояние: б/у','Ядер: 8 / Потоков: 16','Частота: 3.2 ГГц','Turbo: 3.6 ГГц','TDP: 135W','LGA 2011-3'] },
   { id: 11, name: 'Процессор Xeon 2680 v4 14/28 2,4 ГГц 120W', category: 'cpus', price: 1500, stock: 6, img:'img/cpu/2680v4.jpg', specs: ['Состояние: б/у','Ядер: 14 / Потоков: 28','Частота: 2.4 ГГц','Turbo: 3.3 ГГц','TDP: 120W','LGA 2011-3'] },
-  { id: 12, name: 'Процессор Xeon 2690 v4 14/28 2,6 ГГц 135W', category: 'cpus', price: 2000, stock: 1, img:'img/cpu/2690.jpg', specs: ['Состояние: б/у','Ядер: 14 / Потоков: 28','Частота: 2.6 ГГц','Turbo: 3.5 ГГц','TDP: 135W','LGA 2011-3'] },
+  { id: 12, name: 'Процессор Xeon 2690 v4 14/28 2,6 ГГц 135W', category: 'cpus', price: 2000, stock: 3, img:'img/cpu/2690.jpg', specs: ['Состояние: б/у','Ядер: 14 / Потоков: 28','Частота: 2.6 ГГц','Turbo: 3.5 ГГц','TDP: 135W','LGA 2011-3'] },
   { id: 13, name: 'Процессор Xeon 2695 v4 18/36 2,1 ГГц 120W', category: 'cpus', price: 2100, stock: 2, img:'img/cpu/2695.jpg', specs: ['Состояние: б/у','Ядер: 18 / Потоков: 36','Частота: 2.1 ГГц','Turbo: 3.3 ГГц','TDP: 120W','LGA 2011-3'] },
   { id: 14, name: 'Процессор Xeon 2667 v4 8/16 3,2 ГГц 135W', category: 'cpus', price: 2700, stock: 1, img:'img/cpu/2667v4.jpg', specs: ['Состояние: б/у','Ядер: 8 / Потоков: 16','Частота: 3.2 ГГц','Turbo: 3.6 ГГц','TDP: 135W','LGA 2011-3'] },
-  { id: 15, name: 'Процессор Xeon 2673 v4 20/40 2,3 ГГц 135W', category: 'cpus', price: 2000, stock: 1, img:'img/cpu/2673.jpg', specs: ['Состояние: б/у','Ядер: 20 / Потоков: 40','Частота: 2.3 ГГц','Turbo: 3.6 ГГц','TDP: 135W','LGA 2011-3'] },
+  { id: 15, name: 'Процессор Xeon 2673 v4 20/40 2,3 ГГц 135W', category: 'cpus', price: 2000, stock: 3, img:'img/cpu/2673.jpg', specs: ['Состояние: б/у','Ядер: 20 / Потоков: 40','Частота: 2.3 ГГц','Turbo: 3.6 ГГц','TDP: 135W','LGA 2011-3'] },
   { id: 16, name: 'Процессор Xeon 2699 v3 18/36 2,3 ГГц 145W', category: 'cpus', price: 2200, stock: 2, img:'img/cpu/2699.jpg', specs: ['Состояние: б/у','Ядер: 18 / Потоков: 36','Частота: 2.3 ГГц','Turbo: 3.6 ГГц','TDP: 145W','LGA 2011-3'] },
   { id: 17, name: 'Процессор Xeon 2697 v4 18/36 2,3 ГГц 145W', category: 'cpus', price: 3600, stock: 2, img:'img/cpu/2697.jpg', specs: ['Состояние: б/у','Ядер: 18 / Потоков: 36','Частота: 2.3 ГГц','Turbo: 3.6 ГГц','TDP: 145W','LGA 2011-3'] },
   { id: 18, name: 'Процессор Xeon 2696 v4 22/44 2,2 ГГц 150W', category: 'cpus', price: 5700, stock: 2, img:'img/cpu/2696.jpg', specs: ['Состояние: б/у','Ядер: 22 / Потоков: 44','Частота: 2.2 ГГц','Turbo: 3.7 ГГц','TDP: 150W','LGA 2011-3'] },
   { id: 56, name: 'Процессор Xeon 2697A V4 16/32 2,6 ГГц 145W', category: 'cpus', price: 3700, stock: 2, img:'img/cpu/2697a.jpg', specs: ['Состояние: б/у','Ядер: 16 / Потоков: 32','Частота: 2.6 ГГц','Turbo: 3.6 ГГц','TDP: 145W','LGA 2011-3'] },
   { id: 57, name: 'Процессор Xeon 2687w v4 12/24 3 ГГц 160W', category: 'cpus', price: 4300, stock: 2, img:'img/cpu/2687w.jpg', specs: ['Состояние: б/у','Ядер: 12 / Потоков: 24','Частота: 3 ГГц','Turbo: 3.5 ГГц','TDP: 160W','LGA 2011-3'] },
-  { id: 19, name: 'Память DDR4 8 Гб 2133 МГц ECC ×2', category: 'memory', price: 5800, stock: 18, img:'img/ram/ram.jpg', specs: ['Состояние: б/у','Объём: 8 Гб × 2','Частота: 2133 МГц','Тип: ECC REG','Цена за комплект'] },
-  { id: 59, name: 'Память DDR4 8 Гб 2400 МГц ECC ×2', category: 'memory', price: 6400, stock: 12, img:'img/ram/ram.jpg', specs: ['Состояние: б/у','Объём: 8 Гб × 2','Частота: 2400 МГц','Тип: ECC REG','Цена за комплект'] },
-  { id: 20, name: 'Память DDR4 16 Гб 2133 МГц ECC', category: 'memory', price: 5000, stock: 24, img:'img/ram/ram.jpg', specs: ['Состояние: б/у','Объём: 16 Гб','Частота: 2133 МГц','Тип: ECC REG','Цена за 1 планку'] },
-  { id: 58, name: 'Память DDR4 16 Гб 2400 МГц ECC', category: 'memory', price: 5800, stock: 13, img:'img/ram/ram.jpg', specs: ['Состояние: б/у','Объём: 16 Гб','Частота: 2400 МГц','Тип: ECC REG','Цена за 1 планку'] },
+  { id: 19, name: 'Память DDR4 8 Гб 2133 МГц ECC ×2', category: 'memory', price: 6400, stock: 18, img:'img/ram/ram.jpg', specs: ['Состояние: б/у','Объём: 8 Гб × 2','Частота: 2133 МГц','Тип: ECC REG','Цена за комплект'] },
+  { id: 59, name: 'Память DDR4 8 Гб 2400 МГц ECC ×2', category: 'memory', price: 7300, stock: 12, img:'img/ram/ram.jpg', specs: ['Состояние: б/у','Объём: 8 Гб × 2','Частота: 2400 МГц','Тип: ECC REG','Цена за комплект'] },
+  { id: 20, name: 'Память DDR4 16 Гб 2133 МГц ECC', category: 'memory', price: 5800, stock: 24, img:'img/ram/ram.jpg', specs: ['Состояние: б/у','Объём: 16 Гб','Частота: 2133 МГц','Тип: ECC REG','Цена за 1 планку'] },
+  { id: 58, name: 'Память DDR4 16 Гб 2400 МГц ECC', category: 'memory', price: 7000, stock: 13, img:'img/ram/ram.jpg', specs: ['Состояние: б/у','Объём: 16 Гб','Частота: 2400 МГц','Тип: ECC REG','Цена за 1 планку'] },
   { id: 21, name: 'Память DDR4 32 Гб 2133 МГц ECC', hidden: true, category: 'memory', price: 9300, stock: 0, img:'img/ram/ram.jpg', specs: ['Состояние: б/у','Объём: 32 Гб','Частота: 2133 МГц','Тип: ECC REG','Цена за 1 планку'] },
   { id: 22, name: 'Память DDR4 32 Гб 2400 МГц ECC', hidden: true, category: 'memory', price: 10500, stock: 0, img:'img/ram/ram.jpg', specs: ['Состояние: б/у','Объём: 32 Гб','Частота: 2400 МГц','Тип: ECC REG','Цена за 1 планку'] },
   { id: 23, name: 'Кулер Aigo ICE400X', category: 'coolers', price: 900, stock: 1, img:'img/cool/400x.jpg', specs: ['4 трубки','RGB 120 мм','TDP 120W','Разъем: 4 pin','Высота ~78 мм','Крепится на материнку защелками'] },
@@ -45,15 +45,15 @@ const products = [
   { id: 67, name: 'Кулер Snowman MT6 V4 ARGB White', category: 'coolers', price: 2300, stock: 2, img:'img/cool/MT6V4W.jpg', specs: ['6 трубок','120 мм','TDP 210W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
   { id: 68, name: 'Кулер Eurocase 6PI120 ARGB', category: 'coolers', price: 2300, stock: 2, img:'img/cool/5PI120.jpg', specs: ['6 трубок','120 мм','TDP 200W','Разъем: 4 pin','Крепится на материнку винтами'] },
   { id: 29, name: 'Видеокарта Palit NVIDIA RTX 5060 DUAL 8 ГБ', category: 'gpus', price: 31000, stock: 1, img:'img/gpu/palit5060.png', link:'https://www.palit.com/palit/vgapro.php?id=5575&lang=en&pn=NE75060019P1-GB2063D&tab=ov', specs: ['PCI-E 5.0','8 ГБ GDDR7','262 × 126 × 40 мм'] },
-  { id: 83, name: 'Видеокарта Winnfox GT730LP-4GD3-A', category: 'gpus', price: 3500, stock: 1, img:'img/gpu/gt7304g.jpg', specs: ['4 ГБ GDDR3','DVI, HDMI, VGA','1 слот, 148 мм'] },
+  { id: 83, name: 'Видеокарта Winnfox GT730LP-4GD3-A', category: 'gpus', price: 3000, stock: 2, img:'img/gpu/gt7304g.jpg', specs: ['4 ГБ GDDR3','DVI, HDMI, VGA','1 слот, 148 мм'] },
   { id: 30, name: 'SSD Goldenfir T650 2.5" 256 Гб', hidden: true, category: 'ssd', price: 2400, stock: 0, img:'img/ssd/T650-256GB.jpg', specs: ['Объём: 256 Гб','Интерфейс: SATA III'] },
   { id: 31, name: 'SSD Colorful SL500 2.5" 256 Гб', category: 'ssd', price: 3000, stock: 3, img:'img/ssd/SL500.jpg', link:'https://en.colorful.cn/ru/home/product?mid=122&id=0d394ae8-2e65-416e-99f9-d26422394ea8', specs: ['Объём: 256 Гб','Интерфейс: SATA III'] },
-  { id: 32, name: 'SSD CUSU C300 2.5" 512 Гб', category: 'ssd', price: 4600, stock: 0, img:'img/ssd/C300.jpg', specs: ['Объём: 512 Гб','Интерфейс: SATA III'] },
-  { id: 33, name: 'SSD CUSU C300 2.5" 1 Тб', category: 'ssd', price: 7700, stock: 1, img:'img/ssd/C300.jpg', specs: ['Объём: 1 Тб','Интерфейс: SATA III'] },
-  { id: 70, name: 'SSD CUSU C300 2.5" 1,92 Тб', category: 'ssd', price: 9600, stock: 1, img:'img/ssd/C300.jpg', specs: ['Объём: 1,92 Тб','Интерфейс: SATA III'] },
+  { id: 32, name: 'SSD CUSU C300 2.5" 512 Гб', hidden: true, category: 'ssd', price: 4600, stock: 0, img:'img/ssd/C300.jpg', specs: ['Объём: 512 Гб','Интерфейс: SATA III'] },
+  { id: 33, name: 'SSD CUSU C300 2.5" 1 Тб', category: 'ssd', price: 7900, stock: 1, img:'img/ssd/C300.jpg', specs: ['Объём: 1 Тб','Интерфейс: SATA III'] },
+  { id: 70, name: 'SSD CUSU C300 2.5" 1,92 Тб', category: 'ssd', price: 10400, stock: 1, img:'img/ssd/C300.jpg', specs: ['Объём: 1,92 Тб','Интерфейс: SATA III'] },
   { id: 34, name: 'NVMe M.2 Cusu 256 Гб', category: 'nvme', price: 3500, stock: 2, img:'img/m2/CV3500Q_256.jpg', specs: ['256 Гб','PCIe Gen3 x4','Форм-фактор 2280'] },
   { id: 35, name: 'NVMe M.2 Netac NV3000 250 Гб', category: 'nvme', price: 4000, stock: 3, img:'img/m2/NV3000_250.jpg', link:'https://ru.netac.com/products_details/32.html', specs: ['250 Гб','PCIe Gen3 x4','Read 3200 MB/s'] },
-  { id: 36, name: 'NVMe M.2 Cusu 512 Гб', category: 'nvme', price: 5600, stock: 1, img:'img/m2/CV3500Q_512.jpg', specs: ['512 Гб','PCIe Gen3 x4','Read 3200 MB/s'] },
+  { id: 36, name: 'NVMe M.2 Cusu 512 Гб', category: 'nvme', price: 5800, stock: 1, img:'img/m2/CV3500Q_512.jpg', specs: ['512 Гб','PCIe Gen3 x4','Read 3200 MB/s'] },
   { id: 37, name: 'NVMe M.2 Netac NV3000 500 Гб', category: 'nvme', price: 6200, stock: 1, img:'img/m2/NV3000_500.jpg', link:'https://ru.netac.com/products_details/32.html', specs: ['500 Гб','PCIe Gen3 x4','Read 3500 MB/s'] },
   { id: 71, name: 'NVMe M.2 XPG Spectrix S40G RGB 512 Гб', category: 'nvme', price: 6200, stock: 1, img:'img/m2/S40G.jpg', specs: ['512 Гб','RGB подсветка','Форм-фактор 2280','PCIe Gen3 x4','Read 3500 MB/s'] },
   { id: 38, name: 'NVMe M.2 Cusu 1 Тб', category: 'nvme', price: 10000, stock: 1, img:'img/m2/CV3500Q_1000.jpg', specs: ['1 Тб','PCIe Gen3 x4','Read 3500 MB/s'] },
@@ -62,7 +62,8 @@ const products = [
   { id: 40, name: 'DEEPCOOL PF650 650W', hidden: true, category: 'psu', price: 3500, stock: 0, img:'img/psu/РF650.jpg', link:'https://ru.deepcool.com/products/PowerSupplyUnits/powersupplyunits/PF650D-230V-Power-Supply-Unit/2021/15153.shtml', specs: ['80 PLUS','CPU: 2×4+4 pin'] },
   { id: 41, name: 'DEEPCOOL PF700 700W', category: 'psu', price: 3900, stock: 1, img:'img/psu/РF700.jpg', link:'https://ru.deepcool.com/products/PowerSupplyUnits/powersupplyunits/PF700D-230V-Power-Supply-Unit/2021/15154.shtml', specs: ['80 PLUS','CPU: 2×4+4 pin'] },
   { id: 42, name: 'CHIEFTEC Eon ZPU-700S 700W', category: 'psu', price: 4400, stock: 1, img:'img/psu/ZPU700S.jpg', link:'https://www.chieftec.eu/products-detail/ru/566/Серия_EON/568/ZPU-700S', specs: ['80 PLUS','CPU: 2×4+4 pin'] },
-  { id: 72, name: '1STPLAYER ACK BRONZE 850W (HA-850AA2)', category: 'psu', price: 4900, stock: 1, img:'img/psu/ACK_BRONZE.jpg', link:'https://www.1stplayer.com/productdetails/id/332.html', specs: ['80+ Bronze, ATX 3.1','CPU: 2×4+4 pin, GPU: 2×6+2 pin','Разъем: 16-pin (12V-2X6)'] },
+  { id: 72, name: '1STPLAYER ACK BRONZE 850W (HA-850AA2)', category: 'psu', price: 4900, stock: 2, img:'img/psu/ACK_BRONZE.jpg', link:'https://www.1stplayer.com/productdetails/id/332.html', specs: ['80+ Bronze, ATX 3.1','CPU: 2×4+4 pin, GPU: 2×6+2 pin','Разъем: 16-pin (12V-2X6)'] },
+  { id: 84, name: 'Powercase PW600 600W', category: 'psu', price: 3200, stock: 2, img:'img/psu/PW600.png', link:'https://powercase.com.ru/katalog/bloki-pitaniya/pw600', specs: ['80 PLUS Standard','CPU: 1×4+4 pin'] },
   { id: 43, name: 'Корпус EXEGATE mEVO-7803', category: 'cases', price: 1800, stock: 1, img:'img/case/mEVO7803.jpg', link:'https://www.exegate.ru/catalogue/case/mevo/ex296979.html', specs: ['Вентиляторы: 2×120мм RGB, 1×80мм','mATX','170 × 315 × 355 мм','БП сверху','Кулер до 150 мм','Видеокарта до 244 мм','Продуваемый корпус'] },
   { id: 44, name: 'Корпус ExeGate EVO-8243 Black', category: 'cases', price: 3100, stock: 2, img:'img/case/8243.jpg', link:'https://www.exegate.ru/catalogue/case/evo/ex292859.html', specs: ['3 вентилятора RGB 12 см (спереди 3)','mATX, ATX','200 × 427 × 380 мм','БП внизу','Кулер до 156 мм','Видеокарта до 320 мм','Продуваемый корпус'] },
   { id: 73, name: 'Корпус 1STPLAYER FIREROSE F3-A White', category: 'cases', price: 3900, stock: 1, img:'img/case/F3_A_White.jpg', link:'https://ru.1stplayer.com/productdetails/id/166.html', specs: ['4 вентилятора RGB 12 см (сзади 1, спереди 3)','ATX, mATX','190 × 447 × 380 мм','БП внизу','Кулер до 160 мм','Видеокарта до 305 мм','Продуваемый корпус'] },
@@ -127,18 +128,18 @@ const categories = [
 const buildPresets = [
   {
     id: 'b1', name: 'Сборка №1', img: 'img/case/mEVO7803.jpg',
-    desc: ['Корпус EXEGATE mEVO-7803 (новый)','Материнская плата KEYIYOU X99 K4 (новая)','Процессор Xeon 2667 v3 8/16 3,2 ГГц (б/у)','Память 16 Гб 2133 МГц ×1 (б/у)','SSD 2,5" 256 Гб (новый)','Кулер MX96-V3 6 трубок, 92 мм, TDP 180 (новый)','БП DEEPCOOL PF650 650W (новый)','Услуга сборки + Windows 10'],
-    parts: { mb:1, cpu1:10, ram:20, ramQty:1, cool1:60, stor1:31, stor2:0, gpu:0, psu:40, case:43, win:true }
+    desc: ['Корпус EXEGATE mEVO-7803 (новый)','Материнская плата KEYIYOU X99 K4 (новая)','Процессор Xeon 2667 v3 8/16 3,2 ГГц (б/у)','Память 16 Гб 2133 МГц ×1 (б/у)','SSD 2,5" 256 Гб (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Кулер MX96-V3 6 трубок, 92 мм, TDP 180 (новый)','БП Powercase PW600 600W (новый)','Услуга сборки + Windows 10'],
+    parts: { mb:1, cpu1:10, ram:20, ramQty:1, cool1:60, stor1:31, stor2:0, gpu:83, psu:84, case:43, win:true }
   },
   {
     id: 'b4', name: 'Сборка №3', img: 'img/case/Indigon.jpg',
-    desc: ['Корпус 4FAN Indigon White (новый)','Материнская плата Machinist K9 (новая)','Процессор Xeon 2690 v4 14/28 2,6 ГГц (б/у)','Память DDR4 16 Гб 2400 МГц ×2 (б/у)','NVMe M.2 512 Гб (новый)','Кулер Iwongou RGB White 4 трубки, RGB 120 мм, TDP 145 (новый)','БП DEEPCOOL PF650 650W (новый)','Услуга сборки + Windows 10'],
-    parts: { mb:4, cpu1:12, ram:58, ramQty:2, cool1:69, stor1:36, stor2:0, gpu:0, psu:40, case:74, win:true }
+    desc: ['Корпус 4FAN Indigon White (новый)','Материнская плата Machinist K9 (новая)','Процессор Xeon 2690 v4 14/28 2,6 ГГц (б/у)','Память DDR4 16 Гб 2400 МГц ×2 (б/у)','NVMe M.2 512 Гб (новый)','Кулер Iwongou RGB White 4 трубки, RGB 120 мм, TDP 145 (новый)','БП Powercase PW600 600W (новый)','Услуга сборки + Windows 10'],
+    parts: { mb:4, cpu1:12, ram:58, ramQty:2, cool1:69, stor1:36, stor2:0, gpu:0, psu:84, case:74, win:true }
   },
   {
     id: 'b3', name: 'Сборка №5', img: 'img/case/Indigon.jpg',
-    desc: ['Корпус 4FAN Indigon White (новый)','Материнская плата Huananzhi QD4 (новая)','Процессор Xeon 2680 v4 14/28 2,4 ГГц (б/у)','Память DDR4 8 Гб 2133 МГц ×2 (б/у)','SSD 2,5" 512 Гб (новый)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 (новый)','БП DEEPCOOL PF650 650W (новый)','Услуга сборки + Windows 10'],
-    parts: { mb:3, cpu1:11, ram:19, ramQty:1, cool1:25, stor1:32, stor2:0, gpu:0, psu:40, case:74, win:true }
+    desc: ['Корпус 4FAN Indigon White (новый)','Материнская плата Huananzhi QD4 (новая)','Процессор Xeon 2680 v4 14/28 2,4 ГГц (б/у)','Память DDR4 8 Гб 2400 МГц ×2 (б/у)','SSD 2,5" 512 Гб (новый)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 (новый)','БП Powercase PW600 600W (новый)','Услуга сборки + Windows 10'],
+    parts: { mb:3, cpu1:11, ram:59, ramQty:1, cool1:25, stor1:32, stor2:0, gpu:0, psu:84, case:74, win:true }
   },
   {
     id: 'b6', name: 'Сборка №6', img: 'img/case/S2_TG.jpg',
@@ -152,8 +153,8 @@ const buildPresets = [
   },
   {
     id: 'b8', name: 'Сборка №8 (2 процессора)', img: 'img/case/Zulian.jpg',
-    desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная Atermiter X99 dual (новая)','Процессор Xeon 2680 v4 ×2 (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 512 Гб (новый)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 ×2 (новый)','БП DEEPCOOL PF700 700W (новый)','Удлинитель для питания CPU (новый)','Услуга сборки + Windows 10'],
-    parts: { mb:7, cpu1:11, cpu2:11, ram:20, ramQty:2, cool1:25, cool2:25, stor1:36, stor2:0, gpu:0, psu:41, case:46, win:true, extras:[{id:77,qty:1}] }
+    desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная Atermiter X99 dual (новая)','Процессор Xeon 2680 v4 ×2 (б/у)','Память DDR4 8 Гб 2400 МГц ×4 (б/у)','NVMe M.2 512 Гб (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 ×2 (новый)','БП DEEPCOOL PF700 700W (новый)','Удлинитель для питания CPU (новый)','Услуга сборки + Windows 10'],
+    parts: { mb:7, cpu1:11, cpu2:11, ram:59, ramQty:2, cool1:25, cool2:25, stor1:36, stor2:0, gpu:83, psu:41, case:46, win:true, extras:[{id:77,qty:1}] }
   },
   {
     id: 'b10', name: 'Сборка №10 (2 процессора)', img: 'img/case/Zulian.jpg',
@@ -169,5 +170,15 @@ const buildPresets = [
     id: 'b14', name: 'Сборка №14', img: 'img/case/Indigon.jpg',
     desc: ['Корпус 4FAN Indigon White (новый)','Материнская плата Machinist U9 (новая)','Процессор Xeon 2667 v4 8/16 3,2 ГГц (б/у)','Память DDR4 16 Гб 2400 МГц ×2 (б/у)','NVMe M.2 512 Гб (новый)','Кулер Iwongou RGB White 4 трубки, RGB 120 мм, TDP 145 (новый)','БП DEEPCOOL PF700 700W (новый)','Услуга сборки + Windows 10'],
     parts: { mb:81, cpu1:14, ram:58, ramQty:2, cool1:69, stor1:36, stor2:0, gpu:0, psu:41, case:74, win:true }
+  },
+  {
+    id: 'b15', name: 'Сборка №15', img: 'img/case/F3_A_White.jpg',
+    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата HUANANZHI X99 AD4 (новая)','Процессор Xeon 2697 v4 18/36 2,3 ГГц 145W (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Eurocase 4P120 4 трубки, 120 мм, TDP 180 (новый)','БП DEEPCOOL PF700 700W (новый)','Услуга сборки + Windows 10'],
+    parts: { mb:55, cpu1:17, ram:20, ramQty:2, cool1:27, stor1:37, stor2:0, gpu:0, psu:41, case:73, win:true }
+  },
+  {
+    id: 'b16', name: 'Сборка №16', img: 'img/case/8243.jpg',
+    desc: ['Корпус ExeGate EVO-8243 Black (новый)','Материнская плата Machinist B9 (новая)','Процессор Xeon 2680 v4 14/28 2,4 ГГц 120W (б/у)','Память DDR4 8 Гб 2400 МГц ×2 (б/у)','NVMe M.2 256 Гб (новый)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 (новый)','БП Powercase PW600 600W (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10'],
+    parts: { mb:82, cpu1:11, ram:59, ramQty:1, cool1:25, stor1:34, stor2:0, gpu:83, psu:84, case:44, win:true }
   },
 ];
