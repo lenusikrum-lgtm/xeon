@@ -129,58 +129,63 @@ const categories = [
 
 const buildPresets = [
   {
-    id: 'b1', name: 'Сборка №1', img: 'img/case/mEVO7803.jpg',
+    id: 'b1', name: 'Сборка №1 (с видеокартой в комплекте)', img: 'img/case/mEVO7803.jpg',
     desc: ['Корпус EXEGATE mEVO-7803 (новый)','Материнская плата KEYIYOU X99 K4 (новая)','Процессор Xeon 2667 v3 8/16 3,2 ГГц (б/у)','Память 16 Гб 2133 МГц ×1 (б/у)','SSD 2,5" 256 Гб (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Кулер MX96-V3 6 трубок, 92 мм, TDP 180 (новый)','БП Powercase PW600 600W (новый)','Услуга сборки + Windows 10'],
     parts: { mb:1, cpu1:10, ram:20, ramQty:1, cool1:60, stor1:31, stor2:0, gpu:83, psu:84, case:43, win:true }
   },
   {
-    id: 'b4', name: 'Сборка №3', img: 'img/case/Indigon.jpg',
+    id: 'b4', name: 'Сборка №3 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Indigon.jpg',
     desc: ['Корпус 4FAN Indigon White (новый)','Материнская плата Machinist K9 (новая)','Процессор Xeon 2690 v4 14/28 2,6 ГГц (б/у)','Память DDR4 16 Гб 2400 МГц ×2 (б/у)','NVMe M.2 512 Гб (новый)','Кулер Iwongou RGB White 4 трубки, RGB 120 мм, TDP 145 (новый)','БП Powercase PW600 600W (новый)','Услуга сборки + Windows 10'],
     parts: { mb:4, cpu1:12, ram:58, ramQty:2, cool1:69, stor1:36, stor2:0, gpu:0, psu:84, case:74, win:true }
   },
   {
-    id: 'b3', name: 'Сборка №5', img: 'img/case/Indigon.jpg',
+    id: 'b3', name: 'Сборка №5 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Indigon.jpg',
     desc: ['Корпус 4FAN Indigon White (новый)','Материнская плата Huananzhi QD4 (новая)','Процессор Xeon 2680 v4 14/28 2,4 ГГц (б/у)','Память DDR4 8 Гб 2400 МГц ×2 (б/у)','SSD 2,5" 512 Гб (новый)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 (новый)','БП Powercase PW600 600W (новый)','Услуга сборки + Windows 10'],
     parts: { mb:3, cpu1:11, ram:59, ramQty:1, cool1:25, stor1:85, stor2:0, gpu:0, psu:84, case:74, win:true }
   },
   {
-    id: 'b6', name: 'Сборка №6', img: 'img/case/S2_TG.jpg',
+    id: 'b6', name: 'Сборка №6 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/S2_TG.jpg',
     desc: ['Корпус Zalman S2 TG Black (новый)','Материнская плата Machinist MR9S (новая)','Процессор Xeon 2699 v3 18/36 2,3 ГГц (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Eurocase 4P120 4 трубки, 120 мм, TDP 180 (новый)','БП DEEPCOOL PF700 700W (новый)','Услуга сборки + Windows 10'],
     parts: { mb:5, cpu1:16, ram:20, ramQty:2, cool1:27, stor1:37, stor2:0, gpu:0, psu:41, case:45, win:true }
   },
   {
-    id: 'b7', name: 'Сборка №7', img: 'img/case/F3_A_White.jpg', hidden: true,
+    id: 'b7', name: 'Сборка №7 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/F3_A_White.jpg', hidden: true,
     desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата HUANANZHI X99 F8 ARGB (новая)','Процессор Xeon 2696 v4 22/44 2,2 ГГц (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 1 Тб (новый)','Кулер Eurocase 5PI120 ARGB 5 трубок, 120 мм, TDP 190 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10'],
     parts: { mb:8, cpu1:18, ram:58, ramQty:4, cool1:64, stor1:38, stor2:0, gpu:0, psu:42, case:73, win:true }
   },
   {
-    id: 'b8', name: 'Сборка №8 (2 процессора)', img: 'img/case/Zulian.jpg',
+    id: 'b8', name: 'Сборка №8 (2 процессора, с видеокартой в комплекте)', img: 'img/case/Zulian.jpg',
     desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная Atermiter X99 dual (новая)','Процессор Xeon 2680 v4 ×2 (б/у)','Память DDR4 8 Гб 2400 МГц ×4 (б/у)','NVMe M.2 512 Гб (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 ×2 (новый)','БП DEEPCOOL PF700 700W (новый)','Удлинитель для питания CPU (новый)','Услуга сборки + Windows 10'],
     parts: { mb:7, cpu1:11, cpu2:11, ram:59, ramQty:2, cool1:25, cool2:25, stor1:36, stor2:0, gpu:83, psu:41, case:46, win:true, extras:[{id:77,qty:1}] }
   },
   {
-    id: 'b10', name: 'Сборка №10 (2 процессора)', img: 'img/case/Zulian.jpg', hidden: true,
+    id: 'b10', name: 'Сборка №10 (2 процессора, без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Zulian.jpg', hidden: true,
     desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная HUANANZHI X99 F8D+ (новая)','Процессор Xeon 2697 v4 ×2 (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 512 Гб + SSD 2,5" 1 Тб (новые)','Кулер Eurocase 6PI120 ARGB 6 трубок, 120 мм, TDP 200 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Услуга сборки + Windows 10'],
     parts: { mb:9, cpu1:17, cpu2:17, ram:58, ramQty:4, cool1:68, cool2:68, stor1:37, stor2:33, gpu:0, psu:72, case:46, win:true }
   },
   {
-    id: 'b13', name: 'Сборка №13', img: 'img/case/F3_A_White.jpg',
-    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата JGINYUE TITANIUM D4+ (новая)','Процессор Xeon 2687w v4 12/24 3 ГГц 160W (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 512 Гб (новый)','Кулер Eurocase 5PI120 ARGB 5 трубок, 120 мм, TDP 190 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10'],
-    parts: { mb:6, cpu1:57, ram:58, ramQty:4, cool1:64, stor1:71, stor2:0, gpu:0, psu:42, case:73, win:true }
+    id: 'b13', name: 'Сборка №13 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/F3_A_White.jpg',
+    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата JGINYUE TITANIUM D4+ (новая)','Процессор Xeon 2697A V4 16/32 2,6 ГГц 145W (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 512 Гб (новый)','Кулер Eurocase 5PI120 ARGB 5 трубок, 120 мм, TDP 190 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10'],
+    parts: { mb:6, cpu1:56, ram:58, ramQty:4, cool1:64, stor1:71, stor2:0, gpu:0, psu:42, case:73, win:true }
   },
   {
-    id: 'b14', name: 'Сборка №14', img: 'img/case/Indigon.jpg',
+    id: 'b14', name: 'Сборка №14 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Indigon.jpg',
     desc: ['Корпус 4FAN Indigon White (новый)','Материнская плата Machinist U9 (новая)','Процессор Xeon 2667 v4 8/16 3,2 ГГц (б/у)','Память DDR4 16 Гб 2400 МГц ×2 (б/у)','NVMe M.2 512 Гб (новый)','Кулер Iwongou RGB White 4 трубки, RGB 120 мм, TDP 145 (новый)','БП DEEPCOOL PF700 700W (новый)','Услуга сборки + Windows 10'],
     parts: { mb:81, cpu1:14, ram:58, ramQty:2, cool1:69, stor1:36, stor2:0, gpu:0, psu:41, case:74, win:true }
   },
   {
-    id: 'b15', name: 'Сборка №15', img: 'img/case/F3_A_White.jpg',
-    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата HUANANZHI X99 AD4 (новая)','Процессор Xeon 2697A V4 16/32 2,6 ГГц 145W (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Eurocase 4P120 4 трубки, 120 мм, TDP 180 (новый)','БП DEEPCOOL PF700 700W (новый)','Услуга сборки + Windows 10'],
-    parts: { mb:55, cpu1:56, ram:20, ramQty:2, cool1:27, stor1:37, stor2:0, gpu:0, psu:41, case:73, win:true }
+    id: 'b15', name: 'Сборка №15 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/F3_A_White.jpg',
+    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата HUANANZHI X99 AD4 (новая)','Процессор Xeon 2690 v4 14/28 2,6 ГГц 135W (б/у)','Память DDR4 16 Гб 2400 МГц ×2 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Eurocase 4P120 4 трубки, 120 мм, TDP 180 (новый)','БП DEEPCOOL PF700 700W (новый)','Услуга сборки + Windows 10'],
+    parts: { mb:55, cpu1:12, ram:58, ramQty:2, cool1:27, stor1:37, stor2:0, gpu:0, psu:41, case:73, win:true }
   },
   {
-    id: 'b16', name: 'Сборка №16', img: 'img/case/8243.jpg',
+    id: 'b16', name: 'Сборка №16 (с видеокартой в комплекте)', img: 'img/case/8243.jpg',
     desc: ['Корпус ExeGate EVO-8243 Black (новый)','Материнская плата Machinist B9 (новая)','Процессор Xeon 2680 v4 14/28 2,4 ГГц 120W (б/у)','Память DDR4 8 Гб 2400 МГц ×2 (б/у)','NVMe M.2 256 Гб (новый)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 (новый)','БП Powercase PW600 600W (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10'],
     parts: { mb:82, cpu1:11, ram:59, ramQty:1, cool1:25, stor1:34, stor2:0, gpu:83, psu:84, case:44, win:true }
+  },
+  {
+    id: 'b17', name: 'Сборка №17 (с видеокартой в комплекте)', img: 'img/case/Zulian.jpg',
+    desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная Machinist X99 MD8 (новая)','Процессор Xeon 2667 v4 ×2 (б/у)','Память DDR4 16 Гб 2400 МГц ×2 (б/у)','NVMe M.2 1 Тб (новый)','Кулер Eurocase 4P120 4 трубки, 120 мм, TDP 180 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10'],
+    parts: { mb:87, cpu1:14, cpu2:14, ram:58, ramQty:2, cool1:27, cool2:27, stor1:38, stor2:0, gpu:83, psu:72, case:46, win:true }
   },
 ];
