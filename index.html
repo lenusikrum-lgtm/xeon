@@ -526,6 +526,7 @@ header {
 .builder-check input[type="checkbox"]{width:18px;height:18px;accent-color:var(--purple);cursor:pointer}
 .builder-assembly-info{padding:10px 14px;border-radius:10px;background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.2);font-size:14px;font-weight:600;color:#a78bfa}
 .builder-total{display:flex;justify-content:space-between;align-items:center;padding:20px 0 12px;border-top:1px solid rgba(255,255,255,.06)}
+.builder-note{margin:0 0 12px;padding:10px 14px;border-radius:10px;background:rgba(255,159,28,.1);border:1px solid rgba(255,159,28,.25);font-size:13px;font-weight:600;color:#fbbf24;line-height:1.4}
 .builder-total-label{font-size:20px;font-weight:700}
 .builder-total-price{font-size:32px;font-weight:900;background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .builder-add-btn{width:100%;padding:18px;border:none;border-radius:14px;font-size:17px;font-weight:800;background:linear-gradient(135deg,var(--purple),var(--pink));color:#fff;cursor:pointer;transition:all .3s;text-transform:uppercase;letter-spacing:1px}
@@ -1296,6 +1297,7 @@ function addBuildToCart(id, btn) {
   const isDual = mb && mb.dual;
   lines.push('Сборка (' + (isDual ? 'Все наше, 2 CPU' : 'Все наше') + ') — ' + (isDual ? 2500 : 2000).toLocaleString() + ' ₽');
   if (b.parts.win) lines.push('Установка Windows 10/11 — 500 ₽');
+  lines.push('Перед началом сборки необходима небольшая предоплата в размере 3000 рублей');
   cart.push({ id: 'build-' + b.id, qty: 1, name: b.name, price: total, desc: lines.join('\n') });
   saveCart();
   updateCartUI();
@@ -1399,6 +1401,7 @@ function buildConfigurator() {
           <div class="builder-total-label">Итого:</div>
           <div class="builder-total-price" id="b-total">0 ₽</div>
         </div>
+        <div class="builder-note">Перед началом сборки необходима небольшая предоплата в размере 3000 рублей</div>
         <button class="builder-add-btn" onclick="addBuilderToCart()">Добавить сборку в корзину</button>
       </div>
     </div>
@@ -1613,6 +1616,7 @@ function addBuilderToCart() {
   if (document.getElementById('b-ext-cpu')?.checked) lines.push('Удлинитель питания CPU 8-pin — 300 ₽');
 
   const name = 'Сборка ПК (конфигуратор)';
+  lines.push('Перед началом сборки необходима небольшая предоплата в размере 3000 рублей');
   cart.push({ id: 'build-' + Date.now(), qty: 1, name: name, price: total, desc: lines.join('\n') });
   saveCart();
   updateCartUI();
