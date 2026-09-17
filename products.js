@@ -141,7 +141,7 @@ const buildPresets = [
   {
     id: 'b3', name: 'Сборка №5 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Indigon.jpg',
     desc: ['Корпус 4FAN Indigon White (новый)','Материнская плата Huananzhi QD4 (новая)','Процессор Xeon 2680 v4 14/28 2,4 ГГц (б/у)','Память DDR4 8 Гб 2400 МГц ×2 (б/у)','SSD 2,5" 512 Гб (новый)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 (новый)','БП Powercase PW600 600W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:3, cpu1:11, ram:59, ramQty:1, cool1:25, stor1:85, stor2:0, gpu:0, psu:84, case:74, win:true }
+    parts: { mb:3, cpu1:11, ram:59, ramQty:2, cool1:25, stor1:85, stor2:0, gpu:0, psu:84, case:74, win:true }
   },
   {
     id: 'b6', name: 'Сборка №6 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/S2_TG.jpg',
@@ -156,7 +156,7 @@ const buildPresets = [
   {
     id: 'b8', name: 'Сборка №8 (2 процессора, с видеокартой в комплекте)', img: 'img/case/Zulian.jpg',
     desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная Atermiter X99 dual (новая)','Процессор Xeon 2680 v4 ×2 (б/у)','Память DDR4 8 Гб 2400 МГц ×4 (б/у)','NVMe M.2 512 Гб (новый)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 ×2 (новый)','БП DEEPCOOL PF700 700W (новый)','Удлинитель для питания CPU (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:7, cpu1:11, cpu2:11, ram:59, ramQty:2, cool1:25, cool2:25, stor1:36, stor2:0, gpu:83, psu:41, case:46, win:true, extras:[{id:77,qty:1}] }
+    parts: { mb:7, cpu1:11, cpu2:11, ram:59, ramQty:4, cool1:25, cool2:25, stor1:36, stor2:0, gpu:83, psu:41, case:46, win:true, extras:[{id:77,qty:1}] }
   },
   {
     id: 'b10', name: 'Сборка №10 (2 процессора, без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Zulian.jpg', hidden: true,
@@ -181,7 +181,7 @@ const buildPresets = [
   {
     id: 'b16', name: 'Сборка №16 (с видеокартой в комплекте)', img: 'img/case/8243.jpg',
     desc: ['Корпус ExeGate EVO-8243 Black (новый)','Материнская плата Machinist B9 (новая)','Процессор Xeon 2680 v4 14/28 2,4 ГГц 120W (б/у)','Память DDR4 8 Гб 2400 МГц ×2 (б/у)','NVMe M.2 256 Гб (новый)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 (новый)','БП Powercase PW600 600W (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:82, cpu1:11, ram:59, ramQty:1, cool1:25, stor1:34, stor2:0, gpu:83, psu:84, case:44, win:true }
+    parts: { mb:82, cpu1:11, ram:59, ramQty:2, cool1:25, stor1:34, stor2:0, gpu:83, psu:84, case:44, win:true }
   },
   {
     id: 'b17', name: 'Сборка №17 (с видеокартой в комплекте)', img: 'img/case/Zulian.jpg',
