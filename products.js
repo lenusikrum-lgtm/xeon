@@ -20,7 +20,7 @@ const products = [
   { id: 12, name: 'Процессор Xeon 2690 v4 14/28 2,6 ГГц 135W', category: 'cpus', price: 2000, stock: 3, img:'img/cpu/2690.jpg', specs: ['Состояние: б/у','Ядер: 14 / Потоков: 28','Частота: 2.6 ГГц','Turbo: 3.5 ГГц','TDP: 135W','LGA 2011-3'] },
   { id: 13, name: 'Процессор Xeon 2695 v4 18/36 2,1 ГГц 120W', category: 'cpus', price: 2200, stock: 2, img:'img/cpu/2695.jpg', specs: ['Состояние: б/у','Ядер: 18 / Потоков: 36','Частота: 2.1 ГГц','Turbo: 3.3 ГГц','TDP: 120W','LGA 2011-3'] },
   { id: 14, name: 'Процессор Xeon 2667 v4 8/16 3,2 ГГц 135W', category: 'cpus', price: 2700, stock: 2, img:'img/cpu/2667v4.jpg', specs: ['Состояние: б/у','Ядер: 8 / Потоков: 16','Частота: 3.2 ГГц','Turbo: 3.6 ГГц','TDP: 135W','LGA 2011-3'] },
-  { id: 15, name: 'Процессор Xeon 2673 v4 20/40 2,3 ГГц 135W', category: 'cpus', price: 2000, stock: 3, img:'img/cpu/2673.jpg', specs: ['Состояние: б/у','Ядер: 20 / Потоков: 40','Частота: 2.3 ГГц','Turbo: 3.6 ГГц','TDP: 135W','LGA 2011-3'] },
+  { id: 15, name: 'Процессор Xeon 2673 v4 20/40 2,3 ГГц 135W', category: 'cpus', price: 2000, stock: 4, img:'img/cpu/2673.jpg', specs: ['Состояние: б/у','Ядер: 20 / Потоков: 40','Частота: 2.3 ГГц','Turbo: 3.6 ГГц','TDP: 135W','LGA 2011-3'] },
   { id: 16, name: 'Процессор Xeon 2699 v3 18/36 2,3 ГГц 145W', hidden: true, category: 'cpus', price: 2200, stock: 2, img:'img/cpu/2699.jpg', specs: ['Состояние: б/у','Ядер: 18 / Потоков: 36','Частота: 2.3 ГГц','Turbo: 3.6 ГГц','TDP: 145W','LGA 2011-3'] },
   { id: 17, name: 'Процессор Xeon 2697 v4 18/36 2,3 ГГц 145W', category: 'cpus', price: 3300, stock: 4, img:'img/cpu/2697.jpg', specs: ['Состояние: б/у','Ядер: 18 / Потоков: 36','Частота: 2.3 ГГц','Turbo: 3.6 ГГц','TDP: 145W','LGA 2011-3'] },
   { id: 18, name: 'Процессор Xeon 2696 v4 22/44 2,2 ГГц 150W', hidden: true, category: 'cpus', price: 5700, stock: 0, img:'img/cpu/2696.jpg', specs: ['Состояние: б/у','Ядер: 22 / Потоков: 44','Частота: 2.2 ГГц','Turbo: 3.7 ГГц','TDP: 150W','LGA 2011-3'] },
@@ -45,7 +45,7 @@ const products = [
   { id: 61, name: 'Кулер Snowman MT4 V3 White', category: 'coolers', price: 1700, stock: 2, img:'img/cool/MT4V3W.jpg', specs: ['4 трубки','120 мм','TDP 190W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
   { id: 62, name: 'Кулер Snowman MT4 V3 Black', category: 'coolers', price: 1700, stock: 2, img:'img/cool/MT4V3B.jpg', specs: ['4 трубки','120 мм','TDP 190W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
   { id: 63, name: 'Кулер Snowman MT5 V3 Black', category: 'coolers', price: 2300, stock: 0, img:'img/cool/MT5V3B.jpg', specs: ['5 трубок','120 мм','TDP 200W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
-  { id: 64, name: 'Кулер Eurocase 5PI120 ARGB', category: 'coolers', price: 2300, stock: 1, img:'img/cool/5PI120.jpg', specs: ['5 трубок','120 мм','TDP 190W','Разъем: 4 pin','Крепится на материнку винтами'] },
+  { id: 64, name: 'Кулер Eurocase 5PI120 ARGB', hidden: true, category: 'coolers', price: 2300, stock: 1, img:'img/cool/5PI120.jpg', specs: ['5 трубок','120 мм','TDP 190W','Разъем: 4 pin','Крепится на материнку винтами'] },
   { id: 28, name: 'Кулер Snowman MT620 Black', hidden: true, category: 'coolers', price: 2500, stock: 1, img:'img/cool/MT620_RGB.jpg', specs: ['6 трубок','120 мм','TDP 250W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку винтами'] },
   { id: 65, name: 'Кулер Snowman MT620 White', category: 'coolers', price: 2500, stock: 1, img:'img/cool/MT620W.jpg', specs: ['6 трубок','120 мм','TDP 250W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку винтами'] },
   { id: 66, name: 'Кулер Snowman MT6 V4 ARGB Black', category: 'coolers', price: 2500, stock: 1, img:'img/cool/MT6V4B.jpg', specs: ['6 трубок','120 мм','TDP 210W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
@@ -53,19 +53,19 @@ const products = [
   { id: 68, name: 'Кулер Eurocase 6PI120 ARGB', hidden: true, category: 'coolers', price: 2500, stock: 2, img:'img/cool/5PI120.jpg', specs: ['6 трубок','120 мм','TDP 200W','Разъем: 4 pin','Крепится на материнку винтами'] },
   { id: 83, name: 'Видеокарта Winnfox GT730LP-4GD3-A', category: 'gpus', price: 3000, stock: 1, img:'img/gpu/gt7304g.jpg', specs: ['4 ГБ GDDR3','DVI, HDMI, VGA','1 слот, 148 мм'] },
   { id: 30, name: 'SSD Goldenfir T650 2.5" 256 Гб', hidden: true, category: 'ssd', price: 2400, stock: 0, img:'img/ssd/T650-256GB.jpg', specs: ['Объём: 256 Гб','Интерфейс: SATA III'] },
-  { id: 31, name: 'SSD Colorful SL500 2.5" 256 Гб', hidden: true, category: 'ssd', price: 3000, stock: 1, img:'img/ssd/SL500.jpg', link:'https://en.colorful.cn/ru/home/product?mid=122&id=0d394ae8-2e65-416e-99f9-d26422394ea8', specs: ['Объём: 256 Гб','Интерфейс: SATA III'] },
+  { id: 31, name: 'SSD Colorful SL500 2.5" 256 Гб', hidden: true, category: 'ssd', price: 3200, stock: 1, img:'img/ssd/SL500.jpg', link:'https://en.colorful.cn/ru/home/product?mid=122&id=0d394ae8-2e65-416e-99f9-d26422394ea8', specs: ['Объём: 256 Гб','Интерфейс: SATA III'] },
   { id: 32, name: 'SSD CUSU C300 2.5" 512 Гб', hidden: true, category: 'ssd', price: 5000, stock: 1, img:'img/ssd/C300.jpg', specs: ['Объём: 512 Гб','Интерфейс: SATA III'] },
-  { id: 33, name: 'SSD CUSU C300 2.5" 1 Тб', category: 'ssd', price: 8700, stock: 1, img:'img/ssd/C300.jpg', specs: ['Объём: 1 Тб','Интерфейс: SATA III'] },
+  { id: 33, name: 'SSD CUSU C300 2.5" 1 Тб', category: 'ssd', price: 9400, stock: 1, img:'img/ssd/C300.jpg', specs: ['Объём: 1 Тб','Интерфейс: SATA III'] },
   { id: 85, name: 'SSD Walram 2.5" 512 Гб', hidden: true, category: 'ssd', price: 5000, stock: 0, img:'img/ssd/walram.jpg', specs: ['Объём: 512 Гб','Интерфейс: SATA III'] },
-  { id: 70, name: 'SSD CUSU C300 2.5" 1,92 Тб', category: 'ssd', price: 13500, stock: 1, img:'img/ssd/C300.jpg', specs: ['Объём: 1,92 Тб','Интерфейс: SATA III'] },
-  { id: 34, name: 'NVMe M.2 Cusu 256 Гб', category: 'nvme', price: 3700, stock: 2, img:'img/m2/CV3500Q_256.jpg', specs: ['256 Гб','PCIe Gen3 x4','Форм-фактор 2280'] },
+  { id: 70, name: 'SSD CUSU C300 2.5" 1,92 Тб', category: 'ssd', price: 15000, stock: 1, img:'img/ssd/C300.jpg', specs: ['Объём: 1,92 Тб','Интерфейс: SATA III'] },
+  { id: 34, name: 'NVMe M.2 Cusu 256 Гб', category: 'nvme', price: 3900, stock: 2, img:'img/m2/CV3500Q_256.jpg', specs: ['256 Гб','PCIe Gen3 x4','Форм-фактор 2280'] },
   { id: 35, name: 'NVMe M.2 Netac NV3000 250 Гб', category: 'nvme', price: 4300, stock: 3, img:'img/m2/NV3000_250.jpg', link:'https://ru.netac.com/products_details/32.html', specs: ['250 Гб','PCIe Gen3 x4','Read 3200 MB/s'] },
-  { id: 36, name: 'NVMe M.2 Cusu 512 Гб', category: 'nvme', price: 6300, stock: 1, img:'img/m2/CV3500Q_512.jpg', specs: ['512 Гб','PCIe Gen3 x4','Read 3200 MB/s'] },
-  { id: 37, name: 'NVMe M.2 Netac NV3000 500 Гб', category: 'nvme', price: 7000, stock: 1, img:'img/m2/NV3000_500.jpg', link:'https://ru.netac.com/products_details/32.html', specs: ['500 Гб','PCIe Gen3 x4','Read 3500 MB/s'] },
+  { id: 36, name: 'NVMe M.2 Cusu 512 Гб', category: 'nvme', price: 6400, stock: 1, img:'img/m2/CV3500Q_512.jpg', specs: ['512 Гб','PCIe Gen3 x4','Read 3200 MB/s'] },
+  { id: 37, name: 'NVMe M.2 Netac NV3000 500 Гб', category: 'nvme', price: 7200, stock: 1, img:'img/m2/NV3000_500.jpg', link:'https://ru.netac.com/products_details/32.html', specs: ['500 Гб','PCIe Gen3 x4','Read 3500 MB/s'] },
   { id: 71, name: 'NVMe M.2 XPG Spectrix S40G RGB 512 Гб', hidden: true, category: 'nvme', price: 7000, stock: 1, img:'img/m2/S40G.jpg', specs: ['512 Гб','RGB подсветка','Форм-фактор 2280','PCIe Gen3 x4','Read 3500 MB/s'] },
-  { id: 38, name: 'NVMe M.2 Cusu 1 Тб', category: 'nvme', price: 10200, stock: 2, img:'img/m2/CV3500Q_1000.jpg', specs: ['1 Тб','PCIe Gen3 x4','Read 3500 MB/s'] },
-  { id: 80, name: 'NVMe M.2 KingSpec NХ-1Tb 1 Тб', category: 'nvme', price: 11200, stock: 1, img:'img/m2/NX.jpg', specs: ['1 Тб','PCIe Gen3 x4','Read 3500 MB/s'] },
-  { id: 39, name: 'NVMe M.2 Netac NV3000 1 Тб', category: 'nvme', price: 11200, stock: 1, img:'img/m2/NV3000_2000.jpg', link:'https://ru.netac.com/products_details/32.html', specs: ['1 Тб','PCIe Gen3 x4','Read 3500 MB/s'] },
+  { id: 38, name: 'NVMe M.2 Cusu 1 Тб', category: 'nvme', price: 12200, stock: 1, img:'img/m2/CV3500Q_1000.jpg', specs: ['1 Тб','PCIe Gen3 x4','Read 3500 MB/s'] },
+  { id: 80, name: 'NVMe M.2 KingSpec NХ-1Tb 1 Тб', category: 'nvme', price: 13000, stock: 1, img:'img/m2/NX.jpg', specs: ['1 Тб','PCIe Gen3 x4','Read 3500 MB/s'] },
+  { id: 39, name: 'NVMe M.2 Netac NV3000 1 Тб', category: 'nvme', price: 13000, stock: 1, img:'img/m2/NV3000_2000.jpg', link:'https://ru.netac.com/products_details/32.html', specs: ['1 Тб','PCIe Gen3 x4','Read 3500 MB/s'] },
   { id: 40, name: 'DEEPCOOL PF650 650W', hidden: true, category: 'psu', price: 3500, stock: 0, img:'img/psu/РF650.jpg', link:'https://ru.deepcool.com/products/PowerSupplyUnits/powersupplyunits/PF650D-230V-Power-Supply-Unit/2021/15153.shtml', specs: ['80 PLUS','CPU: 2×4+4 pin'] },
   { id: 41, name: 'DEEPCOOL PF700 700W', category: 'psu', price: 3900, stock: 1, img:'img/psu/РF700.jpg', link:'https://ru.deepcool.com/products/PowerSupplyUnits/powersupplyunits/PF700D-230V-Power-Supply-Unit/2021/15154.shtml', specs: ['80 PLUS','CPU: 2×4+4 pin'] },
   { id: 42, name: 'CHIEFTEC Eon ZPU-700S 700W', category: 'psu', price: 4400, stock: 1, img:'img/psu/ZPU700S.jpg', link:'https://www.chieftec.eu/products-detail/ru/566/Серия_EON/568/ZPU-700S', specs: ['80 PLUS','CPU: 2×4+4 pin'] },
@@ -154,8 +154,8 @@ const buildPresets = [
   },
   {
     id: 'b6', name: 'Сборка №6 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/S2_TG.jpg',
-    desc: ['Корпус Zalman S2 TG Black (новый)','Материнская плата Machinist MR9S (новая)','Процессор Xeon 2699 v3 18/36 2,3 ГГц (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Eurocase 4P120 4 трубки, 120 мм, TDP 180 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:5, cpu1:16, ram:20, ramQty:2, cool1:27, stor1:37, stor2:0, gpu:0, psu:42, case:45, win:true }
+    desc: ['Корпус Zalman S2 TG Black (новый)','Материнская плата Machinist MR9S (новая)','Процессор Xeon 2697 v4 18/36 2,3 ГГц 145W (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Eurocase 4P120 4 трубки, 120 мм, TDP 180 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:5, cpu1:17, ram:20, ramQty:2, cool1:27, stor1:37, stor2:0, gpu:0, psu:42, case:45, win:true }
   },
   {
     id: 'b7', name: 'Сборка №7 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/F3_A_White.jpg', hidden: true,
@@ -174,8 +174,8 @@ const buildPresets = [
   },
   {
     id: 'b13', name: 'Сборка №13 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/F3_A_White.jpg',
-    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата JGINYUE TITANIUM D4+ (новая)','Процессор Xeon 2697A V4 16/32 2,6 ГГц 145W (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 512 Гб (новый)','Кулер Eurocase 5PI120 ARGB 5 трубок, 120 мм, TDP 190 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:6, cpu1:56, ram:58, ramQty:4, cool1:64, stor1:71, stor2:0, gpu:0, psu:42, case:73, win:true }
+    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата JGINYUE TITANIUM D4+ (новая)','Процессор Xeon 2697A V4 16/32 2,6 ГГц 145W (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 512 Гб (новый)','Кулер Eurocase 4P120 4 трубки, 120 мм, TDP 180 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:6, cpu1:56, ram:58, ramQty:4, cool1:27, stor1:71, stor2:0, gpu:0, psu:42, case:73, win:true }
   },
   {
     id: 'b14', name: 'Сборка №14 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Indigon.jpg',
