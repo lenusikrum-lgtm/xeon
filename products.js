@@ -56,7 +56,7 @@ const products = [
   { id: 68, name: 'Кулер Eurocase 6PI120 ARGB', hidden: true, category: 'coolers', price: 2500, stock: 2, img:'img/cool/5PI120.jpg', specs: ['6 трубок','120 мм','TDP 200W','Разъем: 4 pin','Крепится на материнку винтами'] },
   { id: 83, name: 'Видеокарта Winnfox GT730LP-4GD3-A', category: 'gpus', price: 3000, stock: 1, img:'img/gpu/gt7304g.jpg', specs: ['4 ГБ GDDR3','DVI, HDMI, VGA','1 слот, 148 мм'] },
   { id: 30, name: 'SSD Goldenfir T650 2.5" 256 Гб', hidden: true, category: 'ssd', price: 2400, stock: 0, img:'img/ssd/T650-256GB.jpg', specs: ['Объём: 256 Гб','Интерфейс: SATA III'] },
-  { id: 31, name: 'SSD Colorful SL500 2.5" 256 Гб', hidden: true, category: 'ssd', price: 3200, stock: 1, img:'img/ssd/SL500.jpg', link:'https://en.colorful.cn/ru/home/product?mid=122&id=0d394ae8-2e65-416e-99f9-d26422394ea8', specs: ['Объём: 256 Гб','Интерфейс: SATA III'] },
+  { id: 31, name: 'SSD Colorful SL500 2.5" 256 Гб', category: 'ssd', price: 3200, stock: 1, img:'img/ssd/SL500.jpg', link:'https://en.colorful.cn/ru/home/product?mid=122&id=0d394ae8-2e65-416e-99f9-d26422394ea8', specs: ['Объём: 256 Гб','Интерфейс: SATA III'] },
   { id: 32, name: 'SSD CUSU C300 2.5" 512 Гб', hidden: true, category: 'ssd', price: 5000, stock: 1, img:'img/ssd/C300.jpg', specs: ['Объём: 512 Гб','Интерфейс: SATA III'] },
   { id: 33, name: 'SSD CUSU C300 2.5" 1 Тб', category: 'ssd', price: 9400, stock: 1, img:'img/ssd/C300.jpg', specs: ['Объём: 1 Тб','Интерфейс: SATA III'] },
   { id: 85, name: 'SSD Walram 2.5" 512 Гб', hidden: true, category: 'ssd', price: 5000, stock: 0, img:'img/ssd/walram.jpg', specs: ['Объём: 512 Гб','Интерфейс: SATA III'] },
@@ -142,8 +142,8 @@ const categories = [
 const buildPresets = [
   {
     id: 'b1', name: 'Сборка №1 (с видеокартой в комплекте)', img: 'img/case/mEVO7803.jpg', 
-    desc: ['Корпус EXEGATE mEVO-7803 (новый)','Материнская плата Huassen X99 P4 V8 (новая)','Процессор Xeon 2650 v4 12/24 2,2 ГГц 105W (б/у)','Память 16 Гб 2133 МГц ×1 (б/у)','NVMe M.2 256 Гб (новый)','Кулер Aigo ICE400X низкопрофильный 4 трубки, RGB 120 мм, TDP 120 (новый)','БП Cougar XTC600 600W (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:94, cpu1:95, ram:20, ramQty:1, cool1:23, stor1:34, stor2:0, gpu:83, psu:90, case:43, win:true }
+    desc: ['Корпус EXEGATE mEVO-7803 (новый)','Материнская плата Huassen X99 P4 V8 (новая)','Процессор Xeon 2650 v4 12/24 2,2 ГГц 105W (б/у)','Память 16 Гб 2133 МГц ×1 (б/у)','SSD 2,5" 256 Гб (новый)','Кулер Aigo ICE400X низкопрофильный 4 трубки, RGB 120 мм, TDP 120 (новый)','БП Cougar XTC600 600W (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:94, cpu1:95, ram:20, ramQty:1, cool1:23, stor1:31, stor2:0, gpu:83, psu:90, case:43, win:true }
   },
   {
     id: 'b4', name: 'Сборка №3 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Indigon.jpg',
