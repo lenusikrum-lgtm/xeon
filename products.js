@@ -178,8 +178,8 @@ const buildPresets = [
   },
   {
     id: 'b13', name: 'Сборка №13 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/F3_A_White.jpg',
-    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата JGINYUE TITANIUM D4+ (новая)','Процессор Xeon 2697A V4 16/32 2,6 ГГц 145W (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 512 Гб (новый)','Кулер Snowman MT6 V4 ARGB Black 6 трубок, 120 мм, TDP 210 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:6, cpu1:56, ram:58, ramQty:4, cool1:66, stor1:71, stor2:0, gpu:0, psu:42, case:73, win:true }
+    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата JGINYUE TITANIUM D4+ (новая)','Процессор Xeon 2697A V4 16/32 2,6 ГГц 145W (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Snowman MT6 V4 ARGB Black 6 трубок, 120 мм, TDP 210 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:6, cpu1:56, ram:58, ramQty:4, cool1:66, stor1:37, stor2:0, gpu:0, psu:42, case:73, win:true }
   },
   {
     id: 'b14', name: 'Сборка №14 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Indigon.jpg',
@@ -198,8 +198,8 @@ const buildPresets = [
   },
   {
     id: 'b17', name: 'Сборка №17 (с видеокартой в комплекте)', img: 'img/case/Zulian.jpg',
-    desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная Machinist X99 MD8 (новая)','Процессор Xeon 2695 v3 ×2 (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 Netac 1 Тб (новый)','Кулер Eurocase 4P120 4 трубки, 120 мм, TDP 180 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:87, cpu1:98, cpu2:98, ram:20, ramQty:2, cool1:27, cool2:27, stor1:39, stor2:0, gpu:83, psu:72, case:46, win:true }
+    desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная Machinist X99 MD8 (новая)','Процессор Xeon 2695 v3 ×2 (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 Netac 1 Тб (новый)','Кулер Snowman MT4 V3 Black 4 трубки, 120 мм, TDP 190 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:87, cpu1:98, cpu2:98, ram:20, ramQty:2, cool1:62, cool2:62, stor1:39, stor2:0, gpu:83, psu:72, case:46, win:true }
   },
   {
     id: 'b18', name: 'Сборка №4 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/F3_A_White.jpg',
@@ -207,7 +207,7 @@ const buildPresets = [
     parts: { mb:89, cpu1:15, ram:20, ramQty:2, cool1:69, stor1:37, stor2:0, gpu:0, psu:41, case:73, win:true }
   },
   {
-    id: 'b9', name: 'Сборка №9 (2 процессора, без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Zulian.jpg',
+    id: 'b9', name: 'Сборка №9 (2 процессора, без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Zulian.jpg', hidden: true, 
     desc: ['Корпус 4FAN Zulian Black (новый)','Материнская плата Huananzhi X10X99-8D V1.0 (новая, может выводить изображение без внешней видеокарты через VGA разъем)','Процессор Xeon 2673 v4 20/40 2,3 ГГц 135W ×2 (б/у)','Память DDR4 16 Гб 2133 МГц ×4 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Snowman MT4 V3 Black 4 трубки, 120 мм, TDP 190 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
     parts: { mb:96, cpu1:15, cpu2:15, ram:20, ramQty:4, cool1:62, cool2:62, stor1:37, stor2:0, gpu:0, psu:72, case:46, win:true }
   },
