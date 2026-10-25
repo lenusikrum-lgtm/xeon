@@ -54,7 +54,7 @@ const products = [
   { id: 66, name: 'Кулер Snowman MT6 V4 ARGB Black', category: 'coolers', price: 2500, stock: 1, img:'img/cool/MT6V4B.jpg', specs: ['6 трубок','120 мм','TDP 210W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
   { id: 67, name: 'Кулер Snowman MT6 V4 ARGB White', category: 'coolers', price: 2500, stock: 2, img:'img/cool/MT6V4W.jpg', specs: ['6 трубок','120 мм','TDP 210W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
   { id: 68, name: 'Кулер Eurocase 6PI120 ARGB', hidden: true, category: 'coolers', price: 2500, stock: 2, img:'img/cool/5PI120.jpg', specs: ['6 трубок','120 мм','TDP 200W','Разъем: 4 pin','Крепится на материнку винтами'] },
-  { id: 83, name: 'Видеокарта Winnfox GT730LP-4GD3-A', hidden: true, category: 'gpus', price: 3000, stock: 1, img:'img/gpu/gt7304g.jpg', specs: ['4 ГБ GDDR3','DVI, HDMI, VGA','1 слот, 148 мм'] },
+  { id: 83, name: 'Видеокарта Asus GT710-SL-2GD5 (б/у)', category: 'gpus', price: 2000, stock: 1, img:'img/gpu/AsusGT710_1', specs: ['2 ГБ GDDR5','DVI, HDMI, VGA','1 слот, 170 мм'] },
   { id: 30, name: 'SSD Goldenfir T650 2.5" 256 Гб', hidden: true, category: 'ssd', price: 2400, stock: 0, img:'img/ssd/T650-256GB.jpg', specs: ['Объём: 256 Гб','Интерфейс: SATA III'] },
   { id: 31, name: 'SSD Colorful SL500 2.5" 256 Гб', category: 'ssd', price: 3200, stock: 3, img:'img/ssd/SL500.jpg', specs: ['Объём: 256 Гб','Интерфейс: SATA III'] },
   { id: 100, name: 'SSD Colorful SL500 2.5" 480 Гб', category: 'ssd', price: 5200, stock: 1, img:'img/ssd/SL500.jpg', specs: ['Объём: 480 Гб','Интерфейс: SATA III'] },
@@ -143,7 +143,7 @@ const categories = [
 const buildPresets = [
   {
     id: 'b1', name: 'Сборка №1 (с видеокартой в комплекте)', img: 'img/case/8243.jpg', 
-    desc: ['Корпус ExeGate EVO-8243 Black (новый)','Материнская плата Huassen X99 P4 V8 (новая)','Процессор Xeon 2650 v4 12/24 2,2 ГГц 105W (б/у)','Память DDR4 8 Гб 2133 МГц ×1 (б/у)','SSD 2,5" 256 Гб (новый)','Кулер Aigo ICE400X низкопрофильный 4 трубки, RGB 120 мм, TDP 120 (новый)','БП Cougar XTC600 600W (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    desc: ['Корпус ExeGate EVO-8243 Black (новый)','Материнская плата Huassen X99 P4 V8 (новая)','Процессор Xeon 2650 v4 12/24 2,2 ГГц 105W (б/у)','Память DDR4 8 Гб 2133 МГц ×1 (б/у)','SSD 2,5" 256 Гб (новый)','Кулер Aigo ICE400X низкопрофильный 4 трубки, RGB 120 мм, TDP 120 (новый)','БП Cougar XTC600 600W (новый)','Видеокарта Asus GT710-SL-2GD5 (б/у)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
     parts: { mb:94, cpu1:95, ram:19, ramQty:1, cool1:23, stor1:31, stor2:0, gpu:83, psu:90, case:44, win:true }
   },
   {
@@ -152,14 +152,14 @@ const buildPresets = [
     parts: { mb:4, cpu1:12, ram:58, ramQty:2, cool1:69, stor1:101, stor2:0, gpu:0, psu:90, case:74, win:true }
   },
   {
-    id: 'b3', name: 'Сборка №5 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Indigon.jpg',
+    id: 'b3', name: 'Сборка №5 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Indigon.jpg', hidden: true,
     desc: ['Корпус 4FAN Indigon White (новый)','Материнская плата Huananzhi QD4 (новая)','Процессор Xeon 2680 v4 14/28 2,4 ГГц (б/у)','Память DDR4 8 Гб 2400 МГц ×2 (б/у)','SSD 2,5" 1 Тб (новый)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 (новый)','БП Cougar XTC600 600W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
     parts: { mb:3, cpu1:11, ram:59, ramQty:2, cool1:25, stor1:33, stor2:0, gpu:0, psu:90, case:74, win:true }
   },
   {
     id: 'b6', name: 'Сборка №6 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/S2_TG.jpg',
-    desc: ['Корпус Zalman S2 TG Black (новый)','Материнская плата Machinist MR9S (новая)','Процессор Xeon 2697 v4 18/36 2,3 ГГц 145W (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Eurocase 4P120 4 трубки, 120 мм, TDP 180 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:5, cpu1:17, ram:20, ramQty:2, cool1:27, stor1:37, stor2:0, gpu:0, psu:42, case:45, win:true }
+    desc: ['Корпус Zalman S2 TG Black (новый)','Материнская плата Machinist MR9S (новая)','Процессор Xeon 2697 v4 18/36 2,3 ГГц 145W (б/у)','Память DDR4 16 Гб 2400 МГц ×2 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Eurocase 4P120 4 трубки, 120 мм, TDP 180 (новый)','БП CHIEFTEC Eon ZPU-700S 700W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:5, cpu1:17, ram:58, ramQty:2, cool1:27, stor1:37, stor2:0, gpu:0, psu:42, case:45, win:true }
   },
   {
     id: 'b7', name: 'Сборка №7 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/F3_A_White.jpg', hidden: true,
@@ -168,7 +168,7 @@ const buildPresets = [
   },
   {
     id: 'b8', name: 'Сборка №8 (2 процессора, с видеокартой в комплекте)', img: 'img/case/Zulian.jpg', hidden: true,
-    desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная Atermiter X99 dual (новая)','Процессор Xeon 2680 v4 ×2 (б/у)','Память DDR4 8 Гб 2400 МГц ×4 (б/у)','SSD 2,5" 512 Гб (новый)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 ×2 (новый)','БП DEEPCOOL PF700 700W (новый)','Удлинитель для питания CPU (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная Atermiter X99 dual (новая)','Процессор Xeon 2680 v4 ×2 (б/у)','Память DDR4 8 Гб 2400 МГц ×4 (б/у)','SSD 2,5" 512 Гб (новый)','Кулер S40 4 трубки, RGB 120 мм, TDP 145 ×2 (новый)','БП DEEPCOOL PF700 700W (новый)','Удлинитель для питания CPU (новый)','Видеокарта Asus GT710-SL-2GD5 (б/у)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
     parts: { mb:7, cpu1:11, cpu2:11, ram:59, ramQty:4, cool1:25, cool2:25, stor1:101, stor2:0, gpu:83, psu:41, case:46, win:true, extras:[{id:77,qty:1}] }
   },
   {
@@ -193,18 +193,18 @@ const buildPresets = [
   },
   {
     id: 'b16', name: 'Сборка №16 (с видеокартой в комплекте)', img: 'img/case/8243.jpg',
-    desc: ['Корпус ExeGate EVO-8243 Black (новый)','Материнская плата Machinist B9 (новая)','Процессор Xeon 2670 v3 12/24 2,3 ГГц 120W (б/у)','Память DDR4 16 Гб 2133 МГц ×1 (б/у)','SSD 2,5" 480 Гб (новый)','Кулер Aigo ICE400X низкопрофильный 4 трубки, RGB 120 мм, TDP 120 (новый)','БП Cougar XTC600 600W (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:82, cpu1:97, ram:20, ramQty:1, cool1:23, stor1:100, stor2:0, gpu:83, psu:90, case:44, win:true }
+    desc: ['Корпус ExeGate EVO-8243 Black (новый)','Материнская плата Machinist B9 (новая)','Процессор Xeon 2670 v3 12/24 2,3 ГГц 120W (б/у)','Память DDR4 8 Гб 2133 МГц ×2 (б/у)','SSD 2,5" 480 Гб (новый)','Кулер Aigo ICE400X низкопрофильный 4 трубки, RGB 120 мм, TDP 120 (новый)','БП Cougar XTC600 600W (новый)','Видеокарта Asus GT710-SL-2GD5 (б/у)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:82, cpu1:97, ram:19, ramQty:2, cool1:23, stor1:100, stor2:0, gpu:83, psu:90, case:44, win:true }
   },
   {
     id: 'b17', name: 'Сборка №17 (с видеокартой в комплекте)', img: 'img/case/Zulian.jpg', hidden: true,
-    desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная Machinist X99 MD8 (новая)','Процессор Xeon 2695 v3 ×2 (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 Netac 1 Тб (новый)','Кулер Snowman MT4 V3 Black 4 трубки, 120 мм, TDP 190 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Видеокарта Winnfox GT730LP-4GD3-A (новая)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    desc: ['Корпус 4FAN Zulian Black (новый)','Двухпроцессорная Machinist X99 MD8 (новая)','Процессор Xeon 2695 v3 ×2 (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 Netac 1 Тб (новый)','Кулер Snowman MT4 V3 Black 4 трубки, 120 мм, TDP 190 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Видеокарта Asus GT710-SL-2GD5 (б/у)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
     parts: { mb:87, cpu1:98, cpu2:98, ram:20, ramQty:2, cool1:62, cool2:62, stor1:39, stor2:0, gpu:83, psu:72, case:46, win:true }
   },
   {
     id: 'b18', name: 'Сборка №4 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/F3_A_White.jpg',
-    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата Machinist MR9A PRO (новая)','Процессор Xeon 2673 v4 20/40 2,3 ГГц 135W (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Iwongou RGB White 4 трубки, RGB 120 мм, TDP 145 (новый)','БП DEEPCOOL PF700 700W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:89, cpu1:15, ram:20, ramQty:2, cool1:69, stor1:37, stor2:0, gpu:0, psu:41, case:73, win:true }
+    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата Machinist MR9A PRO (новая)','Процессор Xeon 2673 v4 20/40 2,3 ГГц 135W (б/у)','Память DDR4 16 Гб 2400 МГц ×2 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Iwongou RGB White 4 трубки, RGB 120 мм, TDP 145 (новый)','БП DEEPCOOL PF700 700W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:89, cpu1:15, ram:58, ramQty:2, cool1:69, stor1:37, stor2:0, gpu:0, psu:41, case:73, win:true }
   },
   {
     id: 'b9', name: 'Сборка №9 (2 процессора, без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/Zulian.jpg', hidden: true, 
