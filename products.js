@@ -39,14 +39,14 @@ const products = [
   { id: 23, name: 'Кулер Aigo ICE400X', category: 'coolers', price: 900, stock: 1, img:'img/cool/400x.jpg', specs: ['4 трубки','RGB 120 мм','TDP 120W','Разъем: 4 pin','Высота ~78 мм','Крепится на материнку защелками'] },
   { id: 24, name: 'Кулер Aigo ICE400SE', hidden: true, category: 'coolers', price: 900, stock: 0, img:'img/cool/ICE400SE.jpg', specs: ['4 трубки','RGB 120 мм','TDP 130W','Разъем: 3 pin','Высота ~132 мм','Крепится на материнку защелками'] },
   { id: 25, name: 'Кулер S40', hidden: true, category: 'coolers', price: 1300, stock: 0, img:'img/cool/S40.jpg', specs: ['4 трубки','RGB 120 мм','TDP 145W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку защелками'] },
-  { id: 88, name: 'Кулер S60', category: 'coolers', price: 1700, stock: 4, img:'img/cool/S60.jpg', specs: ['6 трубок','RGB 120 мм','TDP 165W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку защелками'] },
+  { id: 88, name: 'Кулер S60', category: 'coolers', price: 2000, stock: 4, img:'img/cool/S60.jpg', specs: ['6 трубок','RGB 120 мм','TDP 165W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку защелками'] },
   { id: 26, name: 'Кулер Snowman M-T4', hidden: true, category: 'coolers', price: 1300, stock: 0, img:'img/cool/M-T4.jpg', specs: ['4 трубки','120 мм','TDP 145W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку защелками'] },
-  { id: 69, name: 'Кулер Iwongou RGB White', category: 'coolers', price: 1500, stock: 1, img:'img/cool/Iwongou.jpg', specs: ['4 трубки','RGB 120 мм','TDP 145W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку защелками'] },
-  { id: 86, name: 'Кулер Iwongou RGB Black', category: 'coolers', price: 1500, stock: 2, img:'img/cool/Iwongou_bl.jpg', specs: ['4 трубки','RGB 120 мм','TDP 145W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку защелками'] },
-  { id: 27, name: 'Кулер Eurocase 4P120', category: 'coolers', price: 1900, stock: 1, img:'img/cool/4P120.jpg', specs: ['4 трубки','ARGB 120 мм','TDP 180W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку винтами'] },
-  { id: 60, name: 'Кулер Snowman MX96 V3 Black', category: 'coolers', price: 1900, stock: 2, img:'img/cool/MX96-V3.jpg', specs: ['6 трубок','92 мм','TDP 180W','Разъем: 4 pin','Высота ~121 мм','Крепится на материнку винтами'] },
-  { id: 61, name: 'Кулер Snowman MT4 V3 White', category: 'coolers', price: 1900, stock: 2, img:'img/cool/MT4V3W.jpg', specs: ['4 трубки','120 мм','TDP 190W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
-  { id: 62, name: 'Кулер Snowman MT4 V3 Black', category: 'coolers', price: 1900, stock: 2, img:'img/cool/MT4V3B.jpg', specs: ['4 трубки','120 мм','TDP 190W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
+  { id: 69, name: 'Кулер Iwongou RGB White', category: 'coolers', price: 1400, stock: 1, img:'img/cool/Iwongou.jpg', specs: ['4 трубки','RGB 120 мм','TDP 145W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку защелками'] },
+  { id: 86, name: 'Кулер Iwongou RGB Black', category: 'coolers', price: 1400, stock: 2, img:'img/cool/Iwongou_bl.jpg', specs: ['4 трубки','RGB 120 мм','TDP 145W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку защелками'] },
+  { id: 27, name: 'Кулер Eurocase 4P120', category: 'coolers', price: 2000, stock: 1, img:'img/cool/4P120.jpg', specs: ['4 трубки','ARGB 120 мм','TDP 180W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку винтами'] },
+  { id: 60, name: 'Кулер Snowman MX96 V3 Black', category: 'coolers', price: 2000, stock: 2, img:'img/cool/MX96-V3.jpg', specs: ['6 трубок','92 мм','TDP 180W','Разъем: 4 pin','Высота ~121 мм','Крепится на материнку винтами'] },
+  { id: 61, name: 'Кулер Snowman MT4 V3 White', category: 'coolers', price: 2000, stock: 2, img:'img/cool/MT4V3W.jpg', specs: ['4 трубки','120 мм','TDP 190W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
+  { id: 62, name: 'Кулер Snowman MT4 V3 Black', category: 'coolers', price: 2000, stock: 2, img:'img/cool/MT4V3B.jpg', specs: ['4 трубки','120 мм','TDP 190W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
   { id: 63, name: 'Кулер Snowman MT5 V3 Black', hidden: true, category: 'coolers', price: 2500, stock: 0, img:'img/cool/MT5V3B.jpg', specs: ['5 трубок','120 мм','TDP 200W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
   { id: 64, name: 'Кулер Eurocase 5PI120 ARGB', hidden: true, category: 'coolers', price: 2300, stock: 1, img:'img/cool/5PI120.jpg', specs: ['5 трубок','120 мм','TDP 190W','Разъем: 4 pin','Крепится на материнку винтами'] },
   { id: 28, name: 'Кулер Snowman MT620 Black', hidden: true, category: 'coolers', price: 2500, stock: 1, img:'img/cool/MT620_RGB.jpg', specs: ['6 трубок','120 мм','TDP 250W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку винтами'] },
@@ -177,13 +177,13 @@ const buildPresets = [
   },
   {
     id: 'b8', name: 'Сборка №8 (2 процессора, с видеокартой в комплекте)', img: 'img/case/hspd.jpg', 
-    desc: ['Корпус HSPD M740 Black (новый)','Двухпроцессорная Atermiter X99 dual (новая)','Процессор Xeon 2680 v4 ×2 (б/у)','Память DDR4 8 Гб 2400 МГц ×4 (б/у)','SSD 2,5" 512 Гб (новый)','Кулер Snowman MT4 V3 Black 4 трубки, 120 мм, TDP 190 ×2 (новый)','БП DEEPCOOL PF700 700W (новый)','Удлинитель для питания CPU (новый)','Видеокарта Asus GT710-SL-2GD5 (б/у)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:7, cpu1:11, cpu2:11, ram:59, ramQty:4, cool1:62, cool2:62, stor1:101, stor2:0, gpu:83, psu:41, case:102, win:true, extras:[{id:77,qty:1}] }
+    desc: ['Корпус HSPD M740 Black (новый)','Двухпроцессорная Atermiter X99 dual (новая)','Процессор Xeon 2680 v4 ×2 (б/у)','Память DDR4 8 Гб 2400 МГц ×4 (б/у)','SSD 2,5" 512 Гб (новый)','Кулер Iwongou RGB Black 4 трубки, RGB 120 мм, TDP 145 ×2 (новый)','БП DEEPCOOL PF700 700W (новый)','Удлинитель для питания CPU (новый)','Видеокарта Asus GT710-SL-2GD5 (б/у)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:7, cpu1:11, cpu2:11, ram:59, ramQty:4, cool1:86, cool2:86, stor1:101, stor2:0, gpu:83, psu:41, case:102, win:true, extras:[{id:77,qty:1}] }
   },
   {
     id: 'b10', name: 'Сборка №10 (2 процессора, без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/hspd.jpg',
-    desc: ['Корпус HSPD M740 Black (новый)','Двухпроцессорная HUANANZHI X99 F8D+ (новая)','Процессор Xeon 2697 v4 ×2 (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 500 Гб + SSD 2,5" 1 Тб (новые)','Кулер Eurocase 6PI120 ARGB 6 трубок, 120 мм, TDP 200 ×2 (новый)','БП ADATA XPG KYBER 850W (новый)','Удлинитель для питания CPU (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:9, cpu1:17, cpu2:17, ram:58, ramQty:4, cool1:68, cool2:68, stor1:37, stor2:33, gpu:0, psu:92, case:102, win:true, extras:[{id:77,qty:1}] }
+    desc: ['Корпус HSPD M740 Black (новый)','Двухпроцессорная HUANANZHI X99 F8D+ (новая)','Процессор Xeon 2697 v4 ×2 (б/у)','Память DDR4 16 Гб 2400 МГц ×4 (б/у)','NVMe M.2 500 Гб + SSD 2,5" 1 Тб (новые)','Кулер Snowman MT6 V4 ARGB White ×2 (новый)','БП ADATA XPG KYBER 850W (новый)','Удлинитель для питания CPU (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:9, cpu1:17, cpu2:17, ram:58, ramQty:4, cool1:67, cool2:67, stor1:37, stor2:107, gpu:0, psu:92, case:102, win:true, extras:[{id:77,qty:1}] }
   },
   {
     id: 'b13', name: 'Сборка №13 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/F3_A_White.jpg',
