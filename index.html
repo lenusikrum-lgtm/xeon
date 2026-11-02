@@ -1203,16 +1203,28 @@ function updateServicePrice(id) {
 
 let currentBuild = null;
 
+function buildProductPrice(pid, isDual) {
+  const p = products.find(x => x.id === pid);
+  if (!p) return 0;
+  if (p.variants && p.variants.length) {
+    const key = isDual ? 'двухпроцессорн' : 'однопроцессорн';
+    const v = p.variants.find(v => v.label.toLowerCase().includes(key));
+    if (v) return v.price;
+  }
+  return p.price;
+}
+
 function presetPrice(b) {
   let total = 0;
   const get = id => products.find(p => p.id === id);
-  const add = (id, qty) => { const p = get(id); if (p) total += p.price * (qty || 1); };
   const pr = b.parts;
+  const mb = get(pr.mb);
+  const isDual = !!(mb && mb.dual);
+  const add = (id, qty) => { total += buildProductPrice(id, isDual) * (qty || 1); };
   add(pr.mb); add(pr.cpu1); add(pr.cpu2); add(pr.ram, pr.ramQty); add(pr.cool1); add(pr.cool2);
   add(pr.stor1); add(pr.stor2); add(pr.gpu); add(pr.psu); add(pr.case);
   if (pr.extras) pr.extras.forEach(e => add(e.id, e.qty));
-  const mb = get(pr.mb);
-  total += (mb && mb.dual) ? 3000 : 2000;
+  total += isDual ? 3000 : 2000;
   if (pr.win) total += 500;
   return total;
 }
@@ -1275,27 +1287,30 @@ function addBuildToCart(id, btn) {
   const b = buildPresets.find(x => x.id === id);
   if (!b) return;
   const total = presetPrice(b);
+  const pr = b.parts;
   const lines = [];
   const get = pid => products.find(p => p.id === pid);
+  const mb = get(pr.mb);
+  const isDual = !!(mb && mb.dual);
   const addLine = (pid, qty, label) => {
     const p = get(pid);
-    if (p) lines.push((label ? label + ': ' : '') + p.name + (qty > 1 ? ' ×' + qty : '') + ' — ' + (p.price * (qty || 1)).toLocaleString() + ' ₽');
+    if (!p) return;
+    const price = buildProductPrice(pid, isDual) * (qty || 1);
+    lines.push((label ? label + ': ' : '') + p.name + (qty > 1 ? ' ×' + qty : '') + ' — ' + price.toLocaleString() + ' ₽');
   };
-  addLine(b.parts.mb, 1, 'Материнская плата');
-  addLine(b.parts.cpu1, 1, 'Процессор');
-  addLine(b.parts.cpu2, 1, 'Процессор #2');
-  addLine(b.parts.ram, b.parts.ramQty, 'Память');
-  addLine(b.parts.cool1, 1, 'Кулер');
-  addLine(b.parts.cool2, 1, 'Кулер #2');
-  addLine(b.parts.stor1, 1, 'Накопитель');
-  addLine(b.parts.stor2, 1, 'Накопитель #2');
-  addLine(b.parts.gpu, 1, 'Видеокарта');
-  addLine(b.parts.psu, 1, 'Блок питания');
-  addLine(b.parts.case, 1, 'Корпус');
+  addLine(pr.mb, 1, 'Материнская плата');
+  addLine(pr.cpu1, 1, 'Процессор');
+  addLine(pr.cpu2, 1, 'Процессор #2');
+  addLine(pr.ram, pr.ramQty, 'Память');
+  addLine(pr.cool1, 1, 'Кулер');
+  addLine(pr.cool2, 1, 'Кулер #2');
+  addLine(pr.stor1, 1, 'Накопитель');
+  addLine(pr.stor2, 1, 'Накопитель #2');
+  addLine(pr.gpu, 1, 'Видеокарта');
+  addLine(pr.psu, 1, 'Блок питания');
+  addLine(pr.case, 1, 'Корпус');
   if (pr.extras) pr.extras.forEach(e => addLine(e.id, e.qty, 'Дополнительно'));
-  const mb = get(b.parts.mb);
-  const isDual = mb && mb.dual;
-  lines.push('Сборка (' + (isDual ? 'Все наше, 2 CPU' : 'Все наше') + ') — ' + (isDual ? 2500 : 2000).toLocaleString() + ' ₽');
+  lines.push('Сборка (' + (isDual ? 'Все наше, 2 CPU' : 'Все наше') + ') — ' + (isDual ? 3000 : 2000).toLocaleString() + ' ₽');
   if (b.parts.win) lines.push('Установка Windows 10/11 — 500 ₽');
   lines.push('Перед началом сборки необходима небольшая предоплата в размере 3000 рублей');
   cart.push({ id: 'build-' + b.id, qty: 1, name: b.name, price: total, desc: lines.join('\n') });
@@ -1312,6 +1327,17 @@ function addBuildToCart(id, btn) {
 function builderOpts(cat, placeholder) {
   const items = getByCat(cat);
   return `<option value="">${placeholder}</option>${items.map(p => `<option value="${p.id}" data-price="${p.price}">${p.name} — ${p.price.toLocaleString()} ₽</option>`).join('')}`;
+}
+
+function rebuildCaseOptions(isDual) {
+  const el = document.getElementById('b-case');
+  if (!el) return;
+  const val = el.value;
+  el.innerHTML = '<option value="">— нет —</option>' + getByCat('cases').map(p => {
+    const price = buildProductPrice(p.id, isDual);
+    return `<option value="${p.id}" data-price="${price}">${p.name} — ${price.toLocaleString()} ₽</option>`;
+  }).join('');
+  if (val && Array.from(el.options).some(o => o.value === val)) el.value = val;
 }
 
 function filteredOpts(items, excludeId, minStock) {
@@ -1446,6 +1472,7 @@ function onMbChange() {
   const isDual = mb && mb.dual;
   document.getElementById('b-cpu2-wrap').style.display = isDual ? '' : 'none';
   document.getElementById('b-cool2-wrap').style.display = isDual ? '' : 'none';
+  rebuildCaseOptions(!!isDual);
   if (isDual) {
     const cpu1 = parseInt(document.getElementById('b-cpu1').value);
     const cpus = getByCat('cpus');
@@ -1557,7 +1584,8 @@ function calcBuilderTotal() {
   const psuPrice = getSelPrice('b-psu');
   if (psuPrice) { total += psuPrice; parts.push('БП'); }
 
-  const casePrice = getSelPrice('b-case');
+  const caseSel = parseInt(document.getElementById('b-case').value);
+  const casePrice = caseSel ? buildProductPrice(caseSel, isDual) : 0;
   if (casePrice) { total += casePrice; parts.push('Корпус'); }
 
   const assembly = getAssemblyPrice(isDual);
