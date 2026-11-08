@@ -24,7 +24,7 @@ const products = [
   { id: 16, name: 'Процессор Xeon 2699 v3 18/36 2,3 ГГц 145W', hidden: true, category: 'cpus', price: 2200, stock: 2, img:'img/cpu/2699.jpg', specs: ['Состояние: б/у','Ядер: 18 / Потоков: 36','Частота: 2.3 ГГц','Turbo: 3.6 ГГц','TDP: 145W','LGA 2011-3'] },
   { id: 17, name: 'Процессор Xeon 2697 v4 18/36 2,3 ГГц 145W', category: 'cpus', price: 3300, stock: 3, img:'img/cpu/2697.jpg', specs: ['Состояние: б/у','Ядер: 18 / Потоков: 36','Частота: 2.3 ГГц','Turbo: 3.6 ГГц','TDP: 145W','LGA 2011-3'] },
   { id: 18, name: 'Процессор Xeon 2696 v4 22/44 2,2 ГГц 150W', hidden: true, category: 'cpus', price: 5700, stock: 0, img:'img/cpu/2696.jpg', specs: ['Состояние: б/у','Ядер: 22 / Потоков: 44','Частота: 2.2 ГГц','Turbo: 3.7 ГГц','TDP: 150W','LGA 2011-3'] },
-  { id: 56, name: 'Процессор Xeon 2697A V4 16/32 2,6 ГГц 145W', category: 'cpus', price: 3700, stock: 2, img:'img/cpu/2697a.jpg', specs: ['Состояние: б/у','Ядер: 16 / Потоков: 32','Частота: 2.6 ГГц','Turbo: 3.6 ГГц','TDP: 145W','LGA 2011-3'] },
+  { id: 56, name: 'Процессор Xeon 2697A V4 16/32 2,6 ГГц 145W', hidden: true, category: 'cpus', price: 3700, stock: 2, img:'img/cpu/2697a.jpg', specs: ['Состояние: б/у','Ядер: 16 / Потоков: 32','Частота: 2.6 ГГц','Turbo: 3.6 ГГц','TDP: 145W','LGA 2011-3'] },
   { id: 57, name: 'Процессор Xeon 2687w v4 12/24 3 ГГц 160W', category: 'cpus', price: 4100, stock: 2, img:'img/cpu/2687w.jpg', specs: ['Состояние: б/у','Ядер: 12 / Потоков: 24','Частота: 3 ГГц','Turbo: 3.5 ГГц','TDP: 160W','LGA 2011-3'] },
   { id: 95, name: 'Процессор Xeon 2650 v4 12/24 2,2 ГГц 105W', category: 'cpus', price: 900, stock: 2, img:'img/cpu/2650.jpg', specs: ['Состояние: б/у','Ядер: 12 / Потоков: 24','Частота: 2.2 ГГц','Turbo: 2.9 ГГц','TDP: 105W','LGA 2011-3'] },
   { id: 97, name: 'Процессор Xeon 2670 v3 12/24 2,3 ГГц 120W', category: 'cpus', price: 1200, stock: 2, img:'img/cpu/2670.jpg', specs: ['Состояние: б/у','Ядер: 12 / Потоков: 24','Частота: 2.3 ГГц','Turbo: 3.1 ГГц','TDP: 120W','LGA 2011-3'] },
@@ -46,9 +46,9 @@ const products = [
   { id: 27, name: 'Кулер Eurocase 4P120', hidden: true, category: 'coolers', price: 2000, stock: 1, img:'img/cool/4P120.jpg', specs: ['4 трубки','ARGB 120 мм','TDP 180W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку винтами'] },
   { id: 60, name: 'Кулер Snowman MX96 V3 Black', category: 'coolers', price: 2000, stock: 2, img:'img/cool/MX96-V3.jpg', specs: ['6 трубок','92 мм','TDP 180W','Разъем: 4 pin','Высота ~121 мм','Крепится на материнку винтами'] },
   { id: 61, name: 'Кулер Snowman MT4 V3 White', category: 'coolers', price: 2000, stock: 2, img:'img/cool/MT4V3W.jpg', specs: ['4 трубки','120 мм','TDP 190W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
-  { id: 62, name: 'Кулер Snowman MT4 V3 Black', category: 'coolers', price: 2000, stock: 2, img:'img/cool/MT4V3B.jpg', specs: ['4 трубки','120 мм','TDP 190W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
+  { id: 62, name: 'Кулер Snowman MT4 V3 Black', hidden: true, category: 'coolers', price: 2000, stock: 2, img:'img/cool/MT4V3B.jpg', specs: ['4 трубки','120 мм','TDP 190W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
   { id: 63, name: 'Кулер Snowman MT5 V3 Black', hidden: true, category: 'coolers', price: 2500, stock: 0, img:'img/cool/MT5V3B.jpg', specs: ['5 трубок','120 мм','TDP 200W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
-  { id: 64, name: 'Кулер Eurocase 5PI120 ARGB', category: 'coolers', price: 2300, stock: 8, img:'img/cool/5PI120.jpg', specs: ['5 трубок','120 мм','TDP 190W','Разъем: 4 pin','Крепится на материнку винтами'] },
+  { id: 64, name: 'Кулер Eurocase 5PI120 ARGB', category: 'coolers', price: 2500, stock: 8, img:'img/cool/5PI120.jpg', specs: ['5 трубок','ARGB 120 мм','TDP 190W','Разъем: 4 pin','Высота ~157 мм','Крепится на материнку винтами'] },
   { id: 28, name: 'Кулер Snowman MT620 Black', hidden: true, category: 'coolers', price: 2500, stock: 1, img:'img/cool/MT620_RGB.jpg', specs: ['6 трубок','120 мм','TDP 250W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку винтами'] },
   { id: 65, name: 'Кулер Snowman MT620 White', category: 'coolers', price: 2700, stock: 1, img:'img/cool/MT620W.jpg', specs: ['6 трубок','120 мм','TDP 250W','Разъем: 4 pin','Высота ~156 мм','Крепится на материнку винтами'] },
   { id: 66, name: 'Кулер Snowman MT6 V4 ARGB Black', category: 'coolers', price: 2700, stock: 1, img:'img/cool/MT6V4B.jpg', specs: ['6 трубок','120 мм','TDP 210W','Разъем: 4 pin','Высота ~155 мм','Крепится на материнку винтами'] },
@@ -200,8 +200,8 @@ const buildPresets = [
   },
   {
     id: 'b15', name: 'Сборка №15 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/F3_A_White.jpg',
-    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата HUANANZHI X99 AD4 (новая)','Процессор Xeon 2683 v4 16/32 2,1 ГГц 120W (б/у)','Память DDR4 16 Гб 2400 МГц ×2 (б/у)','NVMe M.2 1 Тб (новый)','Кулер Snowman MT4 V3 Black 4 трубки, 120 мм, TDP 190 (новый)','БП DEEPCOOL PF700 700W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:55, cpu1:99, ram:58, ramQty:2, cool1:62, stor1:105, stor2:0, gpu:0, psu:41, case:73, win:true }
+    desc: ['Корпус 1STPLAYER FIREROSE F3-A White (новый)','Материнская плата HUANANZHI X99 AD4 (новая)','Процессор Xeon 2683 v4 16/32 2,1 ГГц 120W (б/у)','Память DDR4 16 Гб 2400 МГц ×2 (б/у)','NVMe M.2 1 Тб (новый)','Кулер S60 6 трубок, RGB 120 мм, TDP 165 (новый)','БП DEEPCOOL PF700 700W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:55, cpu1:99, ram:58, ramQty:2, cool1:88, stor1:105, stor2:0, gpu:0, psu:41, case:73, win:true }
   },
   {
     id: 'b16', name: 'Сборка №16 (с видеокартой в комплекте)', img: 'img/case/8243.jpg',
@@ -209,9 +209,9 @@ const buildPresets = [
     parts: { mb:82, cpu1:97, ram:20, ramQty:1, cool1:23, stor1:100, stor2:0, gpu:83, psu:90, case:44, win:true }
   },
   {
-    id: 'b17', name: 'Сборка №17 (с видеокартой в комплекте)', img: 'img/case/hspd.jpg', 
-    desc: ['Корпус HSPD M740 Black (новый)','Двухпроцессорная Machinist X99 MD8 (новая)','Процессор Xeon 2695 v3 ×2 (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 1 Тб (новый)','Кулер Snowman MT4 V3 Black 4 трубки, 120 мм, TDP 190 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Видеокарта Asus GT710-SL-2GD5 (б/у)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:87, cpu1:98, cpu2:98, ram:20, ramQty:2, cool1:62, cool2:62, stor1:105, stor2:0, gpu:83, psu:72, case:102, win:true }
+    id: 'b17', name: 'Сборка №17 (с видеокартой в комплекте)', img: 'img/case/hspd.jpg', hidden: true,
+    desc: ['Корпус HSPD M740 Black (новый)','Двухпроцессорная Machinist X99 MD8 (новая)','Процессор Xeon 2695 v3 ×2 (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 1 Тб (новый)','Кулер S60 6 трубок, RGB 120 мм, TDP 165 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Видеокарта Asus GT710-SL-2GD5 (б/у)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:87, cpu1:98, cpu2:98, ram:20, ramQty:2, cool1:88, cool2:88, stor1:105, stor2:0, gpu:83, psu:72, case:102, win:true }
   },
   {
     id: 'b18', name: 'Сборка №4 (без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/F3_A_White.jpg',
@@ -220,7 +220,7 @@ const buildPresets = [
   },
   {
     id: 'b9', name: 'Сборка №9 (2 процессора, без видеокарты в комплекте, приобретается дополнительно)', img: 'img/case/hspd.jpg', 
-    desc: ['Корпус HSPD M740 Black (новый)','Материнская плата Huananzhi X10X99-8D V1.0 (новая, может выводить изображение без внешней видеокарты через VGA разъем)','Процессор Xeon 2673 v4 20/40 2,3 ГГц 135W ×2 (б/у)','Память DDR4 16 Гб 2133 МГц ×4 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Snowman MT4 V3 Black 4 трубки, 120 мм, TDP 190 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
-    parts: { mb:96, cpu1:15, cpu2:15, ram:20, ramQty:4, cool1:62, cool2:62, stor1:37, stor2:0, gpu:0, psu:72, case:102, win:true }
+    desc: ['Корпус HSPD M740 Black (новый)','Материнская плата Huananzhi X10X99-8D V1.0 (новая, может выводить изображение без внешней видеокарты через VGA разъем)','Процессор Xeon 2673 v4 20/40 2,3 ГГц 135W ×2 (б/у)','Память DDR4 16 Гб 2133 МГц ×4 (б/у)','NVMe M.2 500 Гб (новый)','Кулер Eurocase 5PI120 ARGB 5 трубок, ARGB 120 мм, TDP 190 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
+    parts: { mb:96, cpu1:15, cpu2:15, ram:20, ramQty:4, cool1:64, cool2:64, stor1:37, stor2:0, gpu:0, psu:72, case:102, win:true }
   },
 ];
