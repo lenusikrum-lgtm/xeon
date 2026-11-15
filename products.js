@@ -210,7 +210,7 @@ const buildPresets = [
     parts: { mb:82, cpu1:97, ram:20, ramQty:1, cool1:23, stor1:100, stor2:0, gpu:83, psu:90, case:44, win:true }
   },
   {
-    id: 'b17', name: 'Сборка №17 (с видеокартой в комплекте)', img: 'img/case/hspd.jpg', hidden: true,
+    id: 'b17', name: 'Сборка №17 (с видеокартой в комплекте)', img: 'img/case/hspd.jpg', 
     desc: ['Корпус HSPD M740 Black (новый)','Двухпроцессорная Machinist X99 MD8 (новая)','Процессор Xeon 2695 v3 ×2 (б/у)','Память DDR4 16 Гб 2133 МГц ×2 (б/у)','NVMe M.2 1 Тб (новый)','Кулер LJ IT AJ4 4 трубки, RGB 120 мм, TDP 145 ×2 (новый)','БП 1STPLAYER ACK BRONZE 850W (новый)','Видеокарта Asus GT710-SL-2GD5 (б/у)','Услуга сборки + Windows 10','Перед началом сборки необходима небольшая предоплата в размере 3000 рублей'],
     parts: { mb:87, cpu1:98, cpu2:98, ram:20, ramQty:2, cool1:111, cool2:111, stor1:105, stor2:0, gpu:83, psu:72, case:102, win:true }
   },
